@@ -17,4 +17,16 @@ export default (router) => {
       let configString = getConfigFile()
       ctx.body = configString
     })
+    .put('/config/:newConfig', async function (ctx) {
+      try {
+        const newConfig = ctx.params.newConfig
+        fs.writeFile(`${__configPath}`, newConfig, (err) => {
+          if (err) throw err
+          console.log('It\'s saved!')
+        })
+        ctx.body = { code: 1, data: 'ok' }
+      } catch (e) {
+        ctx.body = { code: -1, data: e }
+      }
+    })
 }
