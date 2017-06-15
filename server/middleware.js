@@ -10,7 +10,7 @@ import logger from 'koa-logger'
 import cors from 'kcors'
 import setStatic from 'koa-static'
 
-const __public = path.resolve(__dirname, '../dist')
+const __public = path.resolve(__dirname, '../data')
 
 export default function middleware() {
   return compose([
