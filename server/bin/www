@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /*eslint-env node*/
 
 /**
@@ -7,8 +8,8 @@
 
 require("babel-register")({
   extensions: [".es6", ".es", ".jsx", ".js"],
-  presets:["es2015","stage-2","react"],
-  plugins:["transform-async-to-generator","transform-decorators-legacy"]
+  presets: ["es2015", "stage-2", "react"],
+  plugins: ["transform-async-to-generator", "transform-decorators-legacy"]
 })
 require("babel-polyfill")
 
@@ -39,9 +40,9 @@ if (process.env.MODE == 'https') {
     // providing server with  SSL key/cert
     key: fs.readFileSync(ssl_key),
     cert: fs.readFileSync(ssl_cert)
-  },app.callback())
+  }, app.callback())
 
-}else{
+} else {
 
   server = http.createServer(app.callback())
 
@@ -82,15 +83,15 @@ function normalizePort(val) {
 /**
  * Event listener for HTTPS server "error" event.
  */
-
+/*eslint-disable no-console*/
 function onError(error) {
   if (error.syscall !== 'listen') {
     throw error
   }
 
-  var bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port
+  var bind = typeof port === 'string' ?
+    'Pipe ' + port :
+    'Port ' + port
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
@@ -113,8 +114,8 @@ function onError(error) {
 
 function onListening() {
   var addr = server.address()
-  var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port
+  var bind = typeof addr === 'string' ?
+    'pipe ' + addr :
+    'port ' + addr.port
   debug('Listening on ' + bind)
 }

@@ -1,27 +1,32 @@
-const remoteServer = 'http://172.16.0.19:3008'
-const targetDir = './data.backup'
-
 module.exports = {
+  remoteServer: 'http://172.16.0.19:3008',
+  targetDir: './data.backup',
   // 静态资源配置
   resource: {
-    [`${remoteServer}/svg`]: [{
-      target: `${targetDir}/svg.html`,
+    '/svg': [{
+      target: `svg.html`,
       format: json => json.data
     }],
-    [`${remoteServer}/menu`]: [{
-      target: `${targetDir}/menus.json`,
+    '/menu': [{
+      target: `menus.json`,
       format: json => JSON.stringify(json.data.menus)
     }, {
-      target: `${targetDir}/projects.json`,
+      target: `projects.json`,
       format: json => JSON.stringify(json.data.projects)
     }],
-    [`${remoteServer}/api`]: [{
-      target: `${targetDir}/api.json`,
+    '/api': [{
+      target: `api.json`,
       format: json => JSON.stringify(json.data)
     }],
-    [`${remoteServer}/config`]: [{
-      target: `${targetDir}/config.json`,
+    '/config': [{
+      target: `config.json`,
       format: json => JSON.stringify(json)
     }],
+    // '/images': (json) => json.map(item => ({
+    //   type: 'blob',
+    //   origin: item,
+    //   options: () => ({ flag: 'a' }),
+    //   target: `${item.replace('http://172.16.0.19:3008/','')}`,
+    // })),
   },
 }

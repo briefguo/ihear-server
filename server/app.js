@@ -2,7 +2,6 @@
  * This task starts browserSync. Allowing refreshes to be called from the gulp
  * bundle task.
  */
-/*eslint-env node*/
 import Koa from 'koa'
 import logger from 'koa-logger'
 
@@ -21,4 +20,3 @@ app.on('error', function (err, ctx) {
 })
 
 module.exports = app
-
