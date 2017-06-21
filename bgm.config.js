@@ -24,7 +24,7 @@ module.exports = {
     '/images': (json) => json.allImages.map(item => ({
       type: 'blob',
       originPath: `${item}`,
-      targetPath: `${item}`,
+      targetPath: `data/${item}`,
     })),
   },
 }
