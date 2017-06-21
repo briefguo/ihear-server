@@ -59,6 +59,98 @@ function uploadFile(ctx, options) {
   })
 }
 
+function readDir(__path) {
+  const allImages = []
+  const outputDirs = []
+  // let imageArr = fs.readdirSync(__imagesPath).map(item => `images/${item}`)
+  return new Promise(function (resolve, reject) {
+    function readdir(__path, prePath) {
+      const dirs = fs.readdirSync(__path)
+      // console.log(dirs)
+      const isHasDir = dirs
+        .filter(item => fs.statSync(path.resolve(__path, item)).isDirectory())
+
+      for (let dir of dirs) {
+        const currentPath = path.resolve(__path, dir)
+        const dirStats = fs.statSync(currentPath)
+        const outputPath = currentPath.replace(__imagesPath, 'images')
+
+        if (dirStats.isFile()) {
+          if (!prePath) {
+            // imageArr[outputPath] = 'file'
+          } else {
+            // console.log(prePath);
+            // if(imageArr[prePath]){
+            //   
+            // }
+          }
+          allImages.push(outputPath)
+        }
+
+        if (dirStats.isDirectory()) {
+          // console.log('outputPath', outputPath);
+
+          readdir(currentPath, outputPath)
+          // if (!imageArr[prePath]) {
+          //   imageArr[prePath] = {}
+          // } else {
+          //   imageArr[prePath][outputPath] = 'dir'
+          // }
+
+          outputDirs.push(outputPath)
+
+        }
+      }
+
+      if (isHasDir.length == 0) {
+
+        resolve({ allImages, outputDirs })
+
+      }
+    }
+
+    try {
+      readdir(__path)
+    } catch (err) {
+      reject(err)
+    }
+  })
+}
+
+function getDir(_path) {
+  const output = {}
+  return new Promise(function (resolve, reject) {
+    function readdir(__path) {
+      // 列出当前目录的内容
+      const dirs = fs.readdirSync(__path)
+      const _dirs = []
+      // 遍历目录
+      for (let dir of dirs) {
+        const currentPath = path.resolve(__path, dir)
+        const dirStats = fs.statSync(currentPath)
+
+        if (dirStats.isDirectory()) {
+          _dirs.push(currentPath)
+        }
+      }
+      const _outputPath = __path.replace(__imagesPath, '.')
+
+      output[_outputPath] = dirs
+
+      _dirs.map(item => readdir(item))
+    }
+
+    try {
+      readdir(_path)
+
+      resolve(output)
+
+    } catch (err) {
+      reject(err)
+    }
+  })
+}
+
 export default (router) => {
   router
     // 获取API列表
@@ -84,38 +176,10 @@ export default (router) => {
       }
     })
     .get('/images', async function (ctx) {
-      const allImages = []
-      let outputDirs = []
-
-      function readdir(__path) {
-        const dirs = fs.readdirSync(__path)
-        const isHasDir = dirs
-          .filter(item => fs.statSync(path.resolve(__path, item)).isDirectory())
-
-        for (let dir of dirs) {
-          const currentPath = path.resolve(__path, dir)
-          const dirStats = fs.statSync(currentPath)
-          const outputPath = currentPath.replace(__imagesPath, 'images')
-
-          if (dirStats.isDirectory()) {
-            outputDirs.push(outputPath)
-            readdir(currentPath)
-          }
-
-          if (dirStats.isFile()) {
-            allImages.push(outputPath)
-          }
-        }
-
-        if (isHasDir.length == 0) {
-
-          ctx.body = { allImages, outputDirs }
-
-        }
-      }
-
       try {
-        readdir(__imagesPath)
+        const output = await readDir(__imagesPath)
+        const dirs = await getDir(__imagesPath)
+        ctx.body = { ...output, dirs }
       } catch (err) {
         ctx.body = { code: -1, err }
         ctx.status = 500
