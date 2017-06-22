@@ -41,17 +41,17 @@ export default (router) => {
     })
     // 新建或更新一条API
     .put('/api/:name/:data', async function (ctx) {
-      const name = ctx.params.name
-      const newData = ctx.params.data
-
       try {
+        const name = ctx.params.name
+        const newData = JSON.parse(ctx.params.data)
+
         const results = await Api.find({ name })
 
         if (results.length > 0) {
           ctx.body = await Api.update({ name }, { ...newData, name })
         } else {
           ctx.body = await Api.create({
-            ...ctx.params.data,
+            ...newData,
             name: ctx.params.name
           })
         }
