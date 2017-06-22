@@ -5,16 +5,7 @@ import Api from '../domain/Api/ApiModel'
 
 export default (router) => {
   router
-    // 获取API列表
-    .get('/api', async function (ctx) {
-      try {
-        const data = await Api.find()
-        ctx.body = { code: 1, data }
-      } catch (e) {
-        ctx.body = { code: -1, data: 'file_not_found', err: e }
-      }
-    })
-    .get('/api-copy', async function (ctx) {
+    .get('/api-sync', async function (ctx) {
       const fs = require('fs')
       const path = require('path')
       const __apiPath = path.resolve(__dirname, '../../data/api.json')
@@ -27,6 +18,15 @@ export default (router) => {
         ctx.body = { code: 1, data: 'ok' }
       } catch (e) {
         ctx.body = { code: -1, data: 'fail', err: e }
+      }
+    })
+    // 获取API列表
+    .get('/api', async function (ctx) {
+      try {
+        const data = await Api.find()
+        ctx.body = { code: 1, data }
+      } catch (e) {
+        ctx.body = { code: -1, data: 'file_not_found', err: e }
       }
     })
     // 根据ID获取单条API
@@ -48,18 +48,12 @@ export default (router) => {
         const results = await Api.find({ name })
 
         if (results.length > 0) {
-          ctx.body = {
-            code: 1,
-            data: await Api.update({ name }, { ...newData, name })
-          }
+          ctx.body = await Api.update({ name }, { ...newData, name })
         } else {
-          ctx.body = {
-            code: 1,
-            data: await Api.create({
-              ...ctx.params.data,
-              name: ctx.params.name
-            })
-          }
+          ctx.body = await Api.create({
+            ...ctx.params.data,
+            name: ctx.params.name
+          })
         }
       } catch (err) {
         ctx.body = { code: -1, data: err }
@@ -68,10 +62,9 @@ export default (router) => {
     })
     // 删除API
     .get('/api/:name/delete', async function (ctx) {
-      const name = ctx.params.name
       try {
-        const data = await Api.remove({ name })
-        ctx.body = { code: 1, data }
+        const name = ctx.params.name
+        ctx.body = await Api.remove({ name })
       } catch (e) {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }

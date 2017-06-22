@@ -1,30 +1,32 @@
 /*eslint-disable no-console*/
 'use strict'
 
-import fs from 'fs'
-import path from 'path'
-
-const __configPath = path.resolve(__dirname, '../../data/config.json')
-
-function getConfigFile() {
-  return fs.readFileSync(__configPath, 'utf-8')
-}
+import Config from '../domain/Config/ConfigModel'
 
 export default (router) => {
   router
+    .get('/config-sync', async function (ctx) {
+      const fs = require('fs')
+      const path = require('path')
+      const __configPath = path.resolve(__dirname, '../../data/config.json')
+      let configString = fs.readFileSync(__configPath, 'utf-8')
+
+      const results = await Config.find({ "__v": 0 })
+      if (results.length > 0) {
+        ctx.body = await Config.update({ "__v": 0 }, { ...JSON.parse(configString) })
+      } else {
+        ctx.body = await Config.create({ ...JSON.parse(configString) })
+      }
+    })
     // 获取API列表
     .get('/config', async function (ctx) {
-      let configString = getConfigFile()
-      ctx.body = configString
+      const results = await Config.find()
+      ctx.body = results[0]
     })
     .put('/config/:newConfig', async function (ctx) {
       try {
         const newConfig = ctx.params.newConfig
-        fs.writeFile(`${__configPath}`, newConfig, (err) => {
-          if (err) throw err
-          console.log('It\'s saved!')
-        })
-        ctx.body = { code: 1, data: 'ok' }
+        ctx.body = await Config.update({ "__v": 0 }, { ...JSON.parse(newConfig) })
       } catch (e) {
         ctx.body = { code: -1, data: e }
       }

@@ -97,8 +97,11 @@ export default (router) => {
       ctx.body = { code: 1, data: getSvg() }
     })
     .get('/svg/:id', async function (ctx) {
+      // const xml2js = require('xml2js')
       try {
         const perSvg = getSymbolById(ctx.params.id)
+        // const parser = new xml2js.Parser() //xml -> json
+        // console.log(`${perSvg}`, parser.parseString(`${perSvg}`))
         ctx.body = { code: 1, data: `${perSvg}` }
       } catch (e) {
         ctx.body = { code: -1, data: e }
