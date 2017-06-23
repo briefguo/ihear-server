@@ -26,7 +26,8 @@ export default (router) => {
     .put('/config/:newConfig', async function (ctx) {
       try {
         const newConfig = ctx.params.newConfig
-        ctx.body = await Config.update({ "__v": 0 }, { ...JSON.parse(newConfig) })
+	console.log(newConfig,{...JSON.parse(newConfig)})
+	ctx.body = await Config.update({ "__v": 0 }, { modulePaths: JSON.parse(newConfig).modulePaths })
       } catch (e) {
         ctx.body = { code: -1, data: e }
       }
