@@ -8,6 +8,10 @@ import cheerio from 'cheerio'
 const svg = getSvg()
 let $ = cheerio.load(svg)
 
+function getIdList() {
+  return Array.from($('symbol')).map(item => item.attribs.id)
+}
+
 function saveSvg(path, html) {
   return new Promise((resolve, reject) => {
     fs.writeFile(path, html, (err) => {
@@ -94,14 +98,11 @@ function parseData(text) {
 export default (router) => {
   router
     .get('/svg/', async function (ctx) {
-      ctx.body = { code: 1, data: getSvg() }
+      ctx.body = { code: 1, data: getSvg(), ids: getIdList() }
     })
     .get('/svg/:id', async function (ctx) {
-      // const xml2js = require('xml2js')
       try {
         const perSvg = getSymbolById(ctx.params.id)
-        // const parser = new xml2js.Parser() //xml -> json
-        // console.log(`${perSvg}`, parser.parseString(`${perSvg}`))
         ctx.body = { code: 1, data: `${perSvg}` }
       } catch (e) {
         ctx.body = { code: -1, data: e }
