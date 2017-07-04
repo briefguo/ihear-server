@@ -9,7 +9,7 @@ const svg = getSvg()
 let $ = cheerio.load(svg)
 
 function getIdList() {
-  return Array.from($('symbol')).map(item => item.attribs.id)
+  return Array.from($('symbol')).map(item => item.attribs.id.replace('icon-', ''))
 }
 
 function saveSvg(path, html) {
