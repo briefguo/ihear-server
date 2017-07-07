@@ -1,4 +1,3 @@
-/*eslint-env node*/
 'use strict'
 
 import compose from 'koa-compose'

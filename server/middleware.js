@@ -1,5 +1,3 @@
-/*eslint-env node*/
-
 import path from 'path'
 import compose from 'koa-compose'
 import convert from 'koa-convert'
@@ -22,4 +20,3 @@ export default function middleware() {
     setStatic(__public),
   ])
 }
-

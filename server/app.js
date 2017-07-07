@@ -1,7 +1,3 @@
-/**
- * This task starts browserSync. Allowing refreshes to be called from the gulp
- * bundle task.
- */
 import Koa from 'koa'
 import logger from 'koa-logger'
 
