@@ -1,5 +1,5 @@
 import Koa from 'koa'
-import logger from 'koa-logger'
+// import logger from 'koa-logger'
 
 import middleware from './middleware'
 import dynamic from './dynamic'
@@ -11,8 +11,9 @@ app.use(middleware())
 
 // dynamic
 app.use(dynamic())
-app.on('error', function (err, ctx) {
-  logger.error('server error', err, ctx)
-})
 
-module.exports = app
+// app.on('error', function (err, ctx) {
+//   logger.error('server error', err, ctx)
+// })
+
+export default app

@@ -8,15 +8,15 @@ import logger from 'koa-logger'
 import cors from 'kcors'
 import setStatic from 'koa-static'
 
-const __public = path.resolve(__dirname, '../data')
+const _public = path.resolve(__dirname, '../data')
 
 export default function middleware() {
   return compose([
     logger(),
     helmet(), // reset HTTP headers (e.g. remove x-powered-by)
-    convert(json()),
+    convert(json({})),
     convert(cors()),
-    convert(bodyparser()),
-    setStatic(__public),
+    convert(bodyparser({})),
+    setStatic(_public),
   ])
 }

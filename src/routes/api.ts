@@ -29,6 +29,16 @@ export default (router) => {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }
     })
+    // 获取API列表
+    .get('/api/project/:projectId', async function (ctx) {
+      try {
+        const project = ctx.params.projectId
+        const data = await Api.find({ project })
+        ctx.body = { code: 1, data, msg: ctx.params.projectId }
+      } catch (e) {
+        ctx.body = { code: -1, data: 'file_not_found', err: e }
+      }
+    })
     // 根据ID获取单条API
     .get('/api/:name', async function (ctx) {
       const name = ctx.params.name

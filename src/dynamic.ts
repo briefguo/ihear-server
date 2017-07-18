@@ -17,8 +17,8 @@ export default function api() {
   Object.keys(routes).forEach(name => routes[name](router))
 
   return compose([
-    convert(json()),
-    convert(bodyparser()),
+    convert(json({})),
+    convert(bodyparser({})),
     router.routes(),
     router.allowedMethods(),
   ])

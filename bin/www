@@ -7,13 +7,13 @@
  */
 
 require("babel-register")({
-  extensions: [".es6", ".es", ".jsx", ".js"],
+  extensions: [".jsx", ".js", ".ts", ".tsx"],
   presets: ["es2015", "stage-2", "react"],
   plugins: ["transform-async-to-generator", "transform-decorators-legacy"]
 })
 require("babel-polyfill")
 
-var app = require('../app')
+var app = require('../src/app').default
 var debug = require('debug')('demo:server')
 var http = require('http')
 var https = require('https')
@@ -50,7 +50,10 @@ if (process.env.MODE == 'https') {
 
 var mongoose = require('mongoose')
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://0.0.0.0/mgt')
+mongoose.connect('mongodb://0.0.0.0/mgt',{
+  useMongoClient: true,
+  /* other options */
+})
 
 /**
  * Listen on provided port, on all network interfaces.

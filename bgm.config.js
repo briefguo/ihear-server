@@ -3,9 +3,17 @@ module.exports = {
   // 静态资源配置
   resource: {
     '/svg': [{
-      targetPath: `data/svg.html`,
+      targetPath: `data/svg-mgt.html`,
       format: json => json.data
     }],
+    // '/svg/partner': [{
+    //   targetPath: `data/svg-partner.html`,
+    //   format: json => json.data
+    // }],
+    // '/svg/mgt': [{
+    //   targetPath: `data/svg-mgt.html`,
+    //   format: json => json.data
+    // }],
     '/menu': [{
       targetPath: `data/menus.json`,
       format: json => JSON.stringify(json.data.menus)
