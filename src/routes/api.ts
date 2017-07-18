@@ -1,15 +1,15 @@
-/*eslint-disable no-console*/
 'use strict'
 
+import fs from 'fs'
+import path from 'path'
+import Router, { IRouterContext } from 'koa-router'
 import Api from '../domain/Api/ApiModel'
 
-export default (router) => {
+export default (router: Router) => {
   router
-    .get('/api-sync', async function (ctx) {
-      const fs = require('fs')
-      const path = require('path')
-      const __apiPath = path.resolve(__dirname, '../../data/api.json')
-      const apiObject = JSON.parse(fs.readFileSync(__apiPath, 'utf-8'))
+    .get('/api-sync', async function(ctx: IRouterContext) {
+      const _apiPath = path.resolve(__dirname, '../../data/api.json')
+      const apiObject = JSON.parse(fs.readFileSync(_apiPath, 'utf-8'))
 
       try {
         Object.keys(apiObject).map(item => {
@@ -21,7 +21,7 @@ export default (router) => {
       }
     })
     // 获取API列表
-    .get('/api', async function (ctx) {
+    .get('/api', async function(ctx: IRouterContext) {
       try {
         const data = await Api.find()
         ctx.body = { code: 1, data }
@@ -30,7 +30,7 @@ export default (router) => {
       }
     })
     // 获取API列表
-    .get('/api/project/:projectId', async function (ctx) {
+    .get('/api/project/:projectId', async function(ctx: IRouterContext) {
       try {
         const project = ctx.params.projectId
         const data = await Api.find({ project })
@@ -40,7 +40,7 @@ export default (router) => {
       }
     })
     // 根据ID获取单条API
-    .get('/api/:name', async function (ctx) {
+    .get('/api/:name', async function(ctx: IRouterContext) {
       const name = ctx.params.name
       try {
         const data = await Api.find({ name })
@@ -50,7 +50,7 @@ export default (router) => {
       }
     })
     // 新建或更新一条API
-    .put('/api/:name/:data', async function (ctx) {
+    .put('/api/:name/:data', async function(ctx: IRouterContext) {
       try {
         const name = ctx.params.name
         const newData = JSON.parse(ctx.params.data)
@@ -71,7 +71,7 @@ export default (router) => {
 
     })
     // 删除API
-    .get('/api/:name/delete', async function (ctx) {
+    .get('/api/:name/delete', async function(ctx: IRouterContext) {
       try {
         const name = ctx.params.name
         ctx.body = await Api.remove({ name })

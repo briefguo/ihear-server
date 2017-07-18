@@ -1,9 +1,9 @@
-/*eslint-disable no-console*/
-
 'use strict'
 
-export default (router) => {
-  router.get('/', async function (ctx) {
+import Router, { IRouterContext } from 'koa-router'
+
+export default (router: Router) => {
+  router.get('/', async function(ctx: IRouterContext) {
     ctx.body = 'hello koa'
   })
 }

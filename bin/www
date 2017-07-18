@@ -1,11 +1,8 @@
 #!/usr/bin/env node
 
-/*eslint-env node*/
-
 /**
  * Module dependencies.
  */
-
 require("babel-register")({
   extensions: [".jsx", ".js", ".ts", ".tsx"],
   presets: ["es2015", "stage-2", "react"],
@@ -25,7 +22,6 @@ var path = require('path')
  */
 
 var port = normalizePort(process.env.PORT || '3000')
-// app.set('port', port)
 
 /**
  * Create HTTPS server.
@@ -86,7 +82,7 @@ function normalizePort(val) {
 /**
  * Event listener for HTTPS server "error" event.
  */
-/*eslint-disable no-console*/
+
 function onError(error) {
   if (error.syscall !== 'listen') {
     throw error

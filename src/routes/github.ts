@@ -1,12 +1,13 @@
-/*eslint-disable no-console*/
+
 'use strict'
 
 import superagent from 'superagent'
 import cheerio from 'cheerio'
+import Router, { IRouterContext } from 'koa-router'
 
-export default (router) => {
+export default (router: Router) => {
   router
-    .get('/github/:path', async function (ctx) {
+    .get('/github/:path', async function(ctx: IRouterContext) {
       const res = await superagent.get(`https://github.com/briefguo/${ctx.params.path}`)
       try {
         const $ = cheerio.load(res.text)
