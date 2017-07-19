@@ -2,18 +2,14 @@ module.exports = {
   remoteServer: 'http://172.16.0.19:3008',
   // 静态资源配置
   resource: {
-    '/svg': [{
+    '/svg/partner': [{
+      targetPath: `data/svg-partner.html`,
+      format: json => json.data
+    }],
+    '/svg/mgt': [{
       targetPath: `data/svg-mgt.html`,
       format: json => json.data
     }],
-    // '/svg/partner': [{
-    //   targetPath: `data/svg-partner.html`,
-    //   format: json => json.data
-    // }],
-    // '/svg/mgt': [{
-    //   targetPath: `data/svg-mgt.html`,
-    //   format: json => json.data
-    // }],
     '/menu': [{
       targetPath: `data/menus.json`,
       format: json => JSON.stringify(json.data.menus)
