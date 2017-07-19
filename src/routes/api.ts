@@ -54,11 +54,10 @@ export default (router: Router) => {
     })
 
     // 删除API
-    .get('/api/:projectId/:name/delete', async function(ctx: IRouterContext) {
+    .get('/api/:id/delete', async function(ctx: IRouterContext) {
       try {
-        const name = ctx.params.name
-        const project = ctx.params.projectId
-        ctx.body = await Api.remove({ name, project })
+        const _id = ctx.params.id
+        ctx.body = await Api.remove({ _id })
       } catch (e) {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }
