@@ -20,6 +20,7 @@ export default (router: Router) => {
         ctx.body = { code: -1, data: 'fail', err: e }
       }
     })
+
     // 获取API列表
     .get('/api', async function(ctx: IRouterContext) {
       try {
@@ -29,18 +30,20 @@ export default (router: Router) => {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }
     })
+
     // 获取API列表
-    .get('/api/project/:projectId', async function(ctx: IRouterContext) {
+    .get('/api/:projectId', async function(ctx: IRouterContext) {
       try {
         const project = ctx.params.projectId
-        const data = await Api.find({ project })
+        const data = (await Api.find()).filter((item: any) => item.project === project)
         ctx.body = { code: 1, data, msg: ctx.params.projectId }
       } catch (e) {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }
     })
+
     // 根据ID获取单条API
-    .get('/api/:name', async function(ctx: IRouterContext) {
+    .get('/api/:projectId/:name', async function(ctx: IRouterContext) {
       const name = ctx.params.name
       try {
         const data = await Api.find({ name })
@@ -49,13 +52,26 @@ export default (router: Router) => {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }
     })
+
+    // 删除API
+    .get('/api/:projectId/:name/delete', async function(ctx: IRouterContext) {
+      try {
+        const name = ctx.params.name
+        const project = ctx.params.projectId
+        ctx.body = await Api.remove({ name, project })
+      } catch (e) {
+        ctx.body = { code: -1, data: 'file_not_found', err: e }
+      }
+    })
+
     // 新建或更新一条API
     .put('/api/:name/:data', async function(ctx: IRouterContext) {
       try {
         const name = ctx.params.name
         const newData = JSON.parse(ctx.params.data)
+        const project = newData.projectId
 
-        const results = await Api.find({ name })
+        const results = (await Api.find({ name })).filter((item: any) => item.project === project)
 
         if (results.length > 0) {
           ctx.body = await Api.update({ name }, { ...newData, name })
@@ -69,14 +85,5 @@ export default (router: Router) => {
         ctx.body = { code: -1, data: err }
       }
 
-    })
-    // 删除API
-    .get('/api/:name/delete', async function(ctx: IRouterContext) {
-      try {
-        const name = ctx.params.name
-        ctx.body = await Api.remove({ name })
-      } catch (e) {
-        ctx.body = { code: -1, data: 'file_not_found', err: e }
-      }
     })
 }
