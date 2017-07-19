@@ -4,6 +4,7 @@
 import fs from 'fs'
 import path from 'path'
 import cheerio from 'cheerio'
+import Router, { IRouterContext } from 'koa-router'
 
 function saveSvg(path, html) {
   return new Promise((resolve, reject) => {
@@ -92,13 +93,18 @@ function getIdList($) {
   return Array.from($('symbol')).map(item => item.attribs.id.replace('icon-', ''))
 }
 
-export default (router) => {
+export default (router: Router) => {
   router
-    .get('/svg/:projectId', async function (ctx) {
+    // TODO: 兼容mgt，后期去掉
+    .get('/svg', async function(ctx: IRouterContext) {
+      let $ = cheerio.load(getSvg('mgt'))
+      ctx.body = { code: 1, data: getSvg('mgt'), ids: getIdList($) }
+    })
+    .get('/svg/:projectId', async function(ctx: IRouterContext) {
       let $ = cheerio.load(getSvg(ctx.params.projectId))
       ctx.body = { code: 1, data: getSvg(ctx.params.projectId), ids: getIdList($) }
     })
-    .get('/svg/:projectId/:id', async function (ctx) {
+    .get('/svg/:projectId/:id', async function(ctx: IRouterContext) {
       try {
         let $ = cheerio.load(getSvg(ctx.params.projectId))
         const perSvg = getSymbolById($, ctx.params.id)
@@ -107,7 +113,7 @@ export default (router) => {
         ctx.body = { code: -1, data: e }
       }
     })
-    .delete('/svg/:projectId/:id', async function (ctx) {
+    .delete('/svg/:projectId/:id', async function(ctx: IRouterContext) {
       let $ = cheerio.load(getSvg(ctx.params.projectId))
       const deleteId = ctx.params.id
       const newHTML = removeSymbolById($, deleteId)
@@ -119,7 +125,7 @@ export default (router) => {
 
       ctx.body = await saveSvg(getSvgPath(ctx.params.projectId), newHTML)
     })
-    .put('/svg/:projectId/:id/:newValue', async function (ctx) {
+    .put('/svg/:projectId/:id/:newValue', async function(ctx: IRouterContext) {
       try {
         let $ = cheerio.load(getSvg(ctx.params.projectId))
         const perSvg = getSymbolById($, ctx.params.id)
@@ -132,7 +138,7 @@ export default (router) => {
         ctx.body = { code: -1, data: e }
       }
     })
-    .post('/svg/:projectId/:newSvgArray', async function (ctx) {
+    .post('/svg/:projectId/:newSvgArray', async function(ctx: IRouterContext) {
 
       try {
         ctx.params.newSvgArray = parseData(ctx.params.newSvgArray)
