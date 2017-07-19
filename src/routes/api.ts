@@ -54,7 +54,7 @@ export default (router: Router) => {
     })
 
     // 删除API
-    .get('/api/:id/delete', async function(ctx: IRouterContext) {
+    .delete('/api/:id', async function(ctx: IRouterContext) {
       try {
         const _id = ctx.params.id
         ctx.body = await Api.remove({ _id })
