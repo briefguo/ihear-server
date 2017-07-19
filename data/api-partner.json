@@ -1,1 +1,1 @@
-[]
+[{"name":"test","responseType":"null","response":{"dataType":"null"},"_id":"596ebc2e4de31563330663ac","__v":0,"requestParams":["adminId"],"requestParamsType":[],"required":["adminId"],"pathArray":["tobService","map"],"project":"partner"},{"name":"App.GetMyApplist","responseType":"null","response":{"dataType":"null"},"_id":"596ecd754de31563330663ad","__v":0,"requestParams":["dId"],"requestParamsType":[],"required":["dId"],"pathArray":["webapi","dev"],"project":"partner"}]

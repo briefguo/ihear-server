@@ -17,6 +17,10 @@ module.exports = {
       targetPath: `data/projects.json`,
       format: json => JSON.stringify(json.data.projects)
     }],
+    '/api': [{
+      targetPath: `data/api.json`,
+      format: json => JSON.stringify(json.data)
+    }],
     '/api/mgt': [{
       targetPath: `data/api-mgt.json`,
       format: json => JSON.stringify(json.data)
