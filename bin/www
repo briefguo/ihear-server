@@ -46,7 +46,7 @@ if (process.env.MODE == 'https') {
 
 var mongoose = require('mongoose')
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://0.0.0.0/mgt',{
+mongoose.connect('mongodb://127.0.0.1/mgt',{
   useMongoClient: true,
   /* other options */
 })
