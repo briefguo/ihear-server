@@ -44,6 +44,33 @@ export default (router: Router) => {
     })
 
     /**
+     * 导入数据
+     */
+    .put('/i18n/import/:data', async function(ctx: IRouterContext){
+      try {
+        const params = JSON.parse(ctx.params.data)
+        const project = params.projectId
+        const lang = params.lang
+        const langData = JSON.parse(params.data)
+
+        //解析、插入数据
+        const keys = Object.keys(langData)
+        keys.map(async (key)=>{
+          const result = (await I18n.find({ project, key, lang }))
+          if(result.length>0){
+            I18n.update({ project, key, lang }, { value: langData[key] })
+          }else{
+            I18n.create({ project, key, lang, value: langData[key] })
+          }
+        })
+
+        ctx.body = { code:1, msg: 'success' }
+      } catch (e) {
+        ctx.body = { code: -1, data: e }
+      }
+    })
+
+    /**
      * 新建或更新一条语言包项
      * 参数data:
      *   {
@@ -51,7 +78,7 @@ export default (router: Router) => {
      *     en: 'english translation'
      *   }
      */
-    .get('/i18n/:projectId/:key/:data', async function(ctx: IRouterContext) {
+    .put('/i18n/:projectId/:key/:data', async function(ctx: IRouterContext) {
       try {
         const key = ctx.params.key
         const project = ctx.params.projectId
@@ -61,9 +88,9 @@ export default (router: Router) => {
         langs.map(async (lang)=>{
           const result = (await I18n.find({ project, key, lang }))
           if(result.length>0){
-            I18n.update({ project, key, lang }, { value: newData[lang] })
+            await I18n.update({ project, key, lang }, { value: newData[lang] })
           }else{
-            I18n.create({ project, key, lang, value: newData[lang] })
+            await I18n.create({ project, key, lang, value: newData[lang] })
           }
         })
 
