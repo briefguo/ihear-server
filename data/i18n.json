@@ -1,0 +1,2714 @@
+[
+  {
+    "_id": "5975eba8324d1c066e969637",
+    "project": "partner",
+    "key": "common.back",
+    "lang": "zh",
+    "value": "返回",
+    "__v": 0
+  },
+  {
+    "_id": "5975eba8324d1c066e969638",
+    "project": "partner",
+    "key": "common.back",
+    "lang": "en",
+    "value": "Back",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36ba7",
+    "project": "partner",
+    "key": "index.illegal",
+    "lang": "zh",
+    "value": "无效的页面访问",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36ba8",
+    "project": "partner",
+    "key": "index.welcome",
+    "lang": "zh",
+    "value": "欢迎使用商米合作伙伴平台",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36ba9",
+    "project": "partner",
+    "key": "index.hello",
+    "lang": "zh",
+    "value": "您好，{name}",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36baa",
+    "project": "partner",
+    "key": "index.404",
+    "lang": "zh",
+    "value": "页面不存在",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bab",
+    "project": "partner",
+    "key": "index.myAccount",
+    "lang": "zh",
+    "value": "我的账户",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bac",
+    "project": "partner",
+    "key": "index.developer",
+    "lang": "zh",
+    "value": "开发者文档",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bad",
+    "project": "partner",
+    "key": "common.search",
+    "lang": "zh",
+    "value": "查询",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bae",
+    "project": "partner",
+    "key": "index.logout",
+    "lang": "zh",
+    "value": "退出",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36baf",
+    "project": "partner",
+    "key": "index.title",
+    "lang": "zh",
+    "value": "商米-合作伙伴平台",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb0",
+    "project": "partner",
+    "key": "common.all",
+    "lang": "zh",
+    "value": "全部",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb1",
+    "project": "partner",
+    "key": "common.warning",
+    "lang": "zh",
+    "value": "警告",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb2",
+    "project": "partner",
+    "key": "error.235",
+    "lang": "zh",
+    "value": "用户被停用，请联系管理员",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb3",
+    "project": "partner",
+    "key": "menus.app",
+    "lang": "zh",
+    "value": "我的应用",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb4",
+    "project": "partner",
+    "key": "menus.ibeacon",
+    "lang": "zh",
+    "value": "我的ibeacon",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb5",
+    "project": "partner",
+    "key": "menus.machLife",
+    "lang": "zh",
+    "value": "机具生命周期信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb6",
+    "project": "partner",
+    "key": "menus.order",
+    "lang": "zh",
+    "value": "我的订单",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb7",
+    "project": "partner",
+    "key": "menus.general",
+    "lang": "zh",
+    "value": "通用设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb8",
+    "project": "partner",
+    "key": "login.userNameplaceholder",
+    "lang": "zh",
+    "value": "用户名",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bb9",
+    "project": "partner",
+    "key": "login.documentation",
+    "lang": "zh",
+    "value": "开发者文档",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bba",
+    "project": "partner",
+    "key": "login.know",
+    "lang": "zh",
+    "value": "我知道了",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bbb",
+    "project": "partner",
+    "key": "outOfDate.submit",
+    "lang": "zh",
+    "value": "重新登录",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bbc",
+    "project": "partner",
+    "key": "remoteManage.inputSnQuery",
+    "lang": "zh",
+    "value": "输入SN查询",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bbd",
+    "project": "partner",
+    "key": "remoteManage.columnSn",
+    "lang": "zh",
+    "value": "SN号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bbe",
+    "project": "partner",
+    "key": "remoteManage.remoteSummary",
+    "lang": "zh",
+    "value": "共{total}台 / 在线{online}台",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bbf",
+    "project": "partner",
+    "key": "remoteManage.remoteTip",
+    "lang": "zh",
+    "value": "由于非WiFi网络情况下将产生流量费用，所以此处只获取使用WiFi网络的设备数据。",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc0",
+    "project": "partner",
+    "key": "remoteManage.infoSetting",
+    "lang": "zh",
+    "value": "设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc1",
+    "project": "partner",
+    "key": "remoteManage.deviceMemory",
+    "lang": "zh",
+    "value": "设备内存",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc2",
+    "project": "partner",
+    "key": "remoteManage.theMachIMEI",
+    "lang": "zh",
+    "value": "IMEI",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc3",
+    "project": "partner",
+    "key": "remoteManage.pluginsScreen",
+    "lang": "zh",
+    "value": "屏幕分辨率",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc4",
+    "project": "partner",
+    "key": "remoteManage.networkWLAN",
+    "lang": "zh",
+    "value": "WLAN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc5",
+    "project": "partner",
+    "key": "remoteManage.printer",
+    "lang": "zh",
+    "value": "打印机板",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc6",
+    "project": "partner",
+    "key": "remoteManage.appVer",
+    "lang": "zh",
+    "value": "版本号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc7",
+    "project": "partner",
+    "key": "remoteManage.appThird",
+    "lang": "zh",
+    "value": "第三方应用",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc8",
+    "project": "partner",
+    "key": "remoteManage.cellular",
+    "lang": "zh",
+    "value": "移动网络",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bc9",
+    "project": "partner",
+    "key": "remoteManage.usbDebug",
+    "lang": "zh",
+    "value": "USB调试",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bca",
+    "project": "partner",
+    "key": "remoteManage.forceGpuRendering",
+    "lang": "zh",
+    "value": "强制进行GPU渲染",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bcb",
+    "project": "partner",
+    "key": "remoteManage.volumeCustom",
+    "lang": "zh",
+    "value": "音量键自定义",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bcc",
+    "project": "partner",
+    "key": "remoteManage.security",
+    "lang": "zh",
+    "value": "安全",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bcd",
+    "project": "partner",
+    "key": "remoteManage.deviceAdmin",
+    "lang": "zh",
+    "value": "设备管理",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bce",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleVoice",
+    "lang": "zh",
+    "value": "启用谷歌录音机",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bcf",
+    "project": "partner",
+    "key": "remoteManage.isNotMatch",
+    "lang": "zh",
+    "value": "与平台状态不同",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd0",
+    "project": "partner",
+    "key": "common.no",
+    "lang": "zh",
+    "value": "否",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd1",
+    "project": "partner",
+    "key": "error.default",
+    "lang": "zh",
+    "value": "请求错误",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd2",
+    "project": "partner",
+    "key": "error.243",
+    "lang": "zh",
+    "value": "设备不在线",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd3",
+    "project": "partner",
+    "key": "menus.debug",
+    "lang": "zh",
+    "value": "我的调试员",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd4",
+    "project": "partner",
+    "key": "menus.machData",
+    "lang": "zh",
+    "value": "我的机具数据",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd5",
+    "project": "partner",
+    "key": "menus.machApp",
+    "lang": "zh",
+    "value": "机具应用信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd6",
+    "project": "partner",
+    "key": "menus.phone",
+    "lang": "zh",
+    "value": "电话短信权限",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd7",
+    "project": "partner",
+    "key": "menus.remote",
+    "lang": "zh",
+    "value": "远程协助",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd8",
+    "project": "partner",
+    "key": "login.passWordplaceholder",
+    "lang": "zh",
+    "value": "密码",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bd9",
+    "project": "partner",
+    "key": "login.tingyong",
+    "lang": "zh",
+    "value": "用户被停用，请联系管理员！",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bda",
+    "project": "partner",
+    "key": "login.change",
+    "lang": "zh",
+    "value": "立即修改",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bdb",
+    "project": "partner",
+    "key": "outOfDate.username",
+    "lang": "zh",
+    "value": "当前用户名：",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bdc",
+    "project": "partner",
+    "key": "remoteManage.selectModel",
+    "lang": "zh",
+    "value": "请选择机型",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bdd",
+    "project": "partner",
+    "key": "remoteManage.columnConnect",
+    "lang": "zh",
+    "value": "上次连入",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bde",
+    "project": "partner",
+    "key": "remoteManage.remoteTotal",
+    "lang": "zh",
+    "value": "总设备数",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be0",
+    "project": "partner",
+    "key": "remoteManage.cpu",
+    "lang": "zh",
+    "value": "CPU",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bdf",
+    "project": "partner",
+    "key": "remoteManage.currentDevice",
+    "lang": "zh",
+    "value": "当前设备",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be1",
+    "project": "partner",
+    "key": "remoteManage.deviceMemoryTip",
+    "lang": "zh",
+    "value": "{used}已用，共{total}",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be2",
+    "project": "partner",
+    "key": "remoteManage.theMachSysVer",
+    "lang": "zh",
+    "value": "系统版本",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be3",
+    "project": "partner",
+    "key": "remoteManage.network",
+    "lang": "zh",
+    "value": "网络状态信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be4",
+    "project": "partner",
+    "key": "remoteManage.networkUsing",
+    "lang": "zh",
+    "value": "使用中",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be5",
+    "project": "partner",
+    "key": "remoteManage.printerSn",
+    "lang": "zh",
+    "value": "序列号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be6",
+    "project": "partner",
+    "key": "remoteManage.appSize",
+    "lang": "zh",
+    "value": "大小",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be7",
+    "project": "partner",
+    "key": "remoteManage.appSystem",
+    "lang": "zh",
+    "value": "系统应用",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be8",
+    "project": "partner",
+    "key": "remoteManage.cellularData",
+    "lang": "zh",
+    "value": "移动数据网络",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36be9",
+    "project": "partner",
+    "key": "remoteManage.mockLocation",
+    "lang": "zh",
+    "value": "允许模拟位置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bea",
+    "project": "partner",
+    "key": "remoteManage.strictModeEnable",
+    "lang": "zh",
+    "value": "启动严格模式",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36beb",
+    "project": "partner",
+    "key": "remoteManage.userCenter",
+    "lang": "zh",
+    "value": "用户中心",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bec",
+    "project": "partner",
+    "key": "remoteManage.simLock",
+    "lang": "zh",
+    "value": "SIM卡锁定设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bed",
+    "project": "partner",
+    "key": "remoteManage.unknownSource",
+    "lang": "zh",
+    "value": "未知来源",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bee",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleMail",
+    "lang": "zh",
+    "value": "启用谷歌邮箱客户端",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bef",
+    "project": "partner",
+    "key": "appHome.create",
+    "lang": "zh",
+    "value": "<span>点击上传安装包<br />拖拽安装包到此处上传</span>",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf0",
+    "project": "partner",
+    "key": "common.action",
+    "lang": "zh",
+    "value": "操作",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf1",
+    "project": "partner",
+    "key": "common.size",
+    "lang": "zh",
+    "value": "大小",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf2",
+    "project": "partner",
+    "key": "error.-2",
+    "lang": "zh",
+    "value": "登录失效！请重新登录",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf3",
+    "project": "partner",
+    "key": "error.244",
+    "lang": "zh",
+    "value": "设备连接超时，请重试",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf4",
+    "project": "partner",
+    "key": "menus.market",
+    "lang": "zh",
+    "value": "我的应用市场",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf5",
+    "project": "partner",
+    "key": "menus.nfs",
+    "lang": "zh",
+    "value": "流量管家",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf6",
+    "project": "partner",
+    "key": "menus.machEmploy",
+    "lang": "zh",
+    "value": "机具使用信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf7",
+    "project": "partner",
+    "key": "menus.cardReader",
+    "lang": "zh",
+    "value": "读卡器设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf8",
+    "project": "partner",
+    "key": "menus.remoteManage",
+    "lang": "zh",
+    "value": "远程管理",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bf9",
+    "project": "partner",
+    "key": "login.wrong",
+    "lang": "zh",
+    "value": "用户名或密码错误！",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bfa",
+    "project": "partner",
+    "key": "login.shibai",
+    "lang": "zh",
+    "value": "登录失败！",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bfb",
+    "project": "partner",
+    "key": "outOfDate.tips1",
+    "lang": "zh",
+    "value": "由于你长时间未操作，",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bfc",
+    "project": "partner",
+    "key": "logout.tip1",
+    "lang": "zh",
+    "value": "由于你的账户在其他终端登录，",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bfd",
+    "project": "partner",
+    "key": "remoteManage.columnStatus",
+    "lang": "zh",
+    "value": "状态",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bfe",
+    "project": "partner",
+    "key": "remoteManage.columnOperating",
+    "lang": "zh",
+    "value": "操作",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36bff",
+    "project": "partner",
+    "key": "remoteManage.remoteTotalTip",
+    "lang": "zh",
+    "value": "绑定在您公司账号下的设备。",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c00",
+    "project": "partner",
+    "key": "remoteManage.deviceInfo",
+    "lang": "zh",
+    "value": "设备信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c01",
+    "project": "partner",
+    "key": "remoteManage.ram",
+    "lang": "zh",
+    "value": "内存",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c02",
+    "project": "partner",
+    "key": "remoteManage.theMach",
+    "lang": "zh",
+    "value": "本机",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c03",
+    "project": "partner",
+    "key": "remoteManage.theMachRomVer",
+    "lang": "zh",
+    "value": "ROM版本",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c04",
+    "project": "partner",
+    "key": "remoteManage.networkSim",
+    "lang": "zh",
+    "value": "Sim卡序列号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c05",
+    "project": "partner",
+    "key": "remoteManage.network3GStrength",
+    "lang": "zh",
+    "value": "3G网络强度",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c06",
+    "project": "partner",
+    "key": "remoteManage.printerModel",
+    "lang": "zh",
+    "value": "型号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c07",
+    "project": "partner",
+    "key": "remoteManage.appDefaultStartup",
+    "lang": "zh",
+    "value": "默认启动",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c08",
+    "project": "partner",
+    "key": "remoteManage.wireless&networks",
+    "lang": "zh",
+    "value": "无线和网络",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c09",
+    "project": "partner",
+    "key": "remoteManage.cellularRoaming",
+    "lang": "zh",
+    "value": "移动数据网络漫游",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c0a",
+    "project": "partner",
+    "key": "remoteManage.stayAwake",
+    "lang": "zh",
+    "value": "不锁定屏幕",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c0b",
+    "project": "partner",
+    "key": "remoteManage.showCpuInfo",
+    "lang": "zh",
+    "value": "显示CPU使用情况",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c0c",
+    "project": "partner",
+    "key": "remoteManage.iBeacon",
+    "lang": "zh",
+    "value": "iBeacon",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c0d",
+    "project": "partner",
+    "key": "remoteManage.lockSim",
+    "lang": "zh",
+    "value": "锁定SIM卡",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c0e",
+    "project": "partner",
+    "key": "remoteManage.general",
+    "lang": "zh",
+    "value": "通用设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c0f",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleMap",
+    "lang": "zh",
+    "value": "启用谷歌地图",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c10",
+    "project": "partner",
+    "key": "common.version",
+    "lang": "zh",
+    "value": "版本号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c11",
+    "project": "partner",
+    "key": "common.noData",
+    "lang": "zh",
+    "value": "暂无相关内容",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c12",
+    "project": "partner",
+    "key": "error.-1",
+    "lang": "zh",
+    "value": "请求失败，参数错误",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c13",
+    "project": "partner",
+    "key": "error.246",
+    "lang": "zh",
+    "value": "用户被停用，请联系管理员",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c14",
+    "project": "partner",
+    "key": "menus.boot",
+    "lang": "zh",
+    "value": "我的开机动画",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c15",
+    "project": "partner",
+    "key": "menus.actMach",
+    "lang": "zh",
+    "value": "活跃机具",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c16",
+    "project": "partner",
+    "key": "menus.client",
+    "lang": "zh",
+    "value": "我的客户",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c17",
+    "project": "partner",
+    "key": "menus.news",
+    "lang": "zh",
+    "value": "我的消息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c18",
+    "project": "partner",
+    "key": "login.partners",
+    "lang": "zh",
+    "value": "合作伙伴平台",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c1a",
+    "project": "partner",
+    "key": "login.safety",
+    "lang": "zh",
+    "value": "安全提示",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c19",
+    "project": "partner",
+    "key": "login.register",
+    "lang": "zh",
+    "value": "立即注册",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c1b",
+    "project": "partner",
+    "key": "outOfDate.tips2",
+    "lang": "zh",
+    "value": "为保证信息安全，需要验证你的账户",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c1c",
+    "project": "partner",
+    "key": "logout.tip2",
+    "lang": "zh",
+    "value": "本次登录已经失效，请重新登录！",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c1d",
+    "project": "partner",
+    "key": "remoteManage.columnModel",
+    "lang": "zh",
+    "value": "机型",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c1e",
+    "project": "partner",
+    "key": "remoteManage.remoteDetail",
+    "lang": "zh",
+    "value": "查看设备信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c1f",
+    "project": "partner",
+    "key": "remoteManage.remoteOnline",
+    "lang": "zh",
+    "value": "在线设备",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c20",
+    "project": "partner",
+    "key": "remoteManage.infoBasic",
+    "lang": "zh",
+    "value": "机具信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c21",
+    "project": "partner",
+    "key": "remoteManage.battery",
+    "lang": "zh",
+    "value": "电量",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c22",
+    "project": "partner",
+    "key": "remoteManage.theMachModel",
+    "lang": "zh",
+    "value": "机型",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c23",
+    "project": "partner",
+    "key": "remoteManage.theMachLoc",
+    "lang": "zh",
+    "value": "当前位置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c24",
+    "project": "partner",
+    "key": "remoteManage.networkOperator",
+    "lang": "zh",
+    "value": "运营商",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c25",
+    "project": "partner",
+    "key": "remoteManage.networkMac",
+    "lang": "zh",
+    "value": "MAC地址",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c26",
+    "project": "partner",
+    "key": "remoteManage.printerVer",
+    "lang": "zh",
+    "value": "打印机板版本号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c27",
+    "project": "partner",
+    "key": "remoteManage.appDefaultDesktop",
+    "lang": "zh",
+    "value": "默认桌面",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c28",
+    "project": "partner",
+    "key": "remoteManage.wifi",
+    "lang": "zh",
+    "value": "WI-FI",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c29",
+    "project": "partner",
+    "key": "remoteManage.vpn",
+    "lang": "zh",
+    "value": "VPN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c2a",
+    "project": "partner",
+    "key": "remoteManage.showTouch",
+    "lang": "zh",
+    "value": "显示触摸操作",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c2b",
+    "project": "partner",
+    "key": "remoteManage.showANR",
+    "lang": "zh",
+    "value": "显示所有“应用无响应”(anr)",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c2c",
+    "project": "partner",
+    "key": "remoteManage.timezone",
+    "lang": "zh",
+    "value": "自动确定时区",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c2d",
+    "project": "partner",
+    "key": "remoteManage.password",
+    "lang": "zh",
+    "value": "密码",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c2e",
+    "project": "partner",
+    "key": "remoteManage.googleApps",
+    "lang": "zh",
+    "value": "谷歌套件",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c2f",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleSetting",
+    "lang": "zh",
+    "value": "启用谷歌设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c30",
+    "project": "partner",
+    "key": "common.yes",
+    "lang": "zh",
+    "value": "是",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c31",
+    "project": "partner",
+    "key": "common.ok",
+    "lang": "zh",
+    "value": "确定",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c32",
+    "project": "partner",
+    "key": "error.201",
+    "lang": "zh",
+    "value": "用户名或密码错误",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c33",
+    "project": "partner",
+    "key": "menus.index",
+    "lang": "zh",
+    "value": "合作伙伴平台",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c34",
+    "project": "partner",
+    "key": "menus.desktop",
+    "lang": "zh",
+    "value": "我的桌面",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c35",
+    "project": "partner",
+    "key": "menus.machPosit",
+    "lang": "zh",
+    "value": "机具位置信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c36",
+    "project": "partner",
+    "key": "menus.mach",
+    "lang": "zh",
+    "value": "我的机具",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c37",
+    "project": "partner",
+    "key": "menus.rom",
+    "lang": "zh",
+    "value": "升级设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c38",
+    "project": "partner",
+    "key": "login.Login",
+    "lang": "zh",
+    "value": "登录",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c39",
+    "project": "partner",
+    "key": "login.fp",
+    "lang": "zh",
+    "value": "忘记密码",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c3a",
+    "project": "partner",
+    "key": "login.instruction",
+    "lang": "zh",
+    "value": "为加强信息安全，如您的密码少于8位或由纯数字、纯字母组成，请及时修改密码",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c3b",
+    "project": "partner",
+    "key": "outOfDate.placeholder",
+    "lang": "zh",
+    "value": "请输入密码",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c3c",
+    "project": "partner",
+    "key": "logout.warning",
+    "lang": "zh",
+    "value": "警告",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c3d",
+    "project": "partner",
+    "key": "remoteManage.columnRom",
+    "lang": "zh",
+    "value": "ROM型号",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c3e",
+    "project": "partner",
+    "key": "remoteManage.remoteAlert",
+    "lang": "zh",
+    "value": "如下列表中，在线设备的数量取决于设备是否升级到最新系统以及设备是否使用WiFi网络！",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c3f",
+    "project": "partner",
+    "key": "remoteManage.remoteOnlineTip",
+    "lang": "zh",
+    "value": "可以查看该设备的基本信息，例如：机型、地理位置、版本信息、已安装的应用列表、设置的开关情况等。",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c40",
+    "project": "partner",
+    "key": "remoteManage.infoApps",
+    "lang": "zh",
+    "value": "应用",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c41",
+    "project": "partner",
+    "key": "remoteManage.storage",
+    "lang": "zh",
+    "value": "存储",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c42",
+    "project": "partner",
+    "key": "remoteManage.theMachSn",
+    "lang": "zh",
+    "value": "本机SN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c43",
+    "project": "partner",
+    "key": "remoteManage.plugins",
+    "lang": "zh",
+    "value": "外设信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c44",
+    "project": "partner",
+    "key": "remoteManage.network3G",
+    "lang": "zh",
+    "value": "3G",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c45",
+    "project": "partner",
+    "key": "remoteManage.networkIp",
+    "lang": "zh",
+    "value": "当前IP地址",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c46",
+    "project": "partner",
+    "key": "remoteManage.appName",
+    "lang": "zh",
+    "value": "应用名",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c47",
+    "project": "partner",
+    "key": "remoteManage.appIsDisabled",
+    "lang": "zh",
+    "value": "是否禁用",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c48",
+    "project": "partner",
+    "key": "remoteManage.bluetooth",
+    "lang": "zh",
+    "value": "蓝牙",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c49",
+    "project": "partner",
+    "key": "remoteManage.devOption",
+    "lang": "zh",
+    "value": "开发者选项",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c4a",
+    "project": "partner",
+    "key": "remoteManage.pointerLocation",
+    "lang": "zh",
+    "value": "指针位置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c4b",
+    "project": "partner",
+    "key": "remoteManage.customSetting",
+    "lang": "zh",
+    "value": "个性化设置",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c4c",
+    "project": "partner",
+    "key": "remoteManage.location",
+    "lang": "zh",
+    "value": "位置信息",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c4d",
+    "project": "partner",
+    "key": "remoteManage.showPassword",
+    "lang": "zh",
+    "value": "显示密码",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c4e",
+    "project": "partner",
+    "key": "remoteManage.enableGooglePlay",
+    "lang": "zh",
+    "value": "启用Google Play",
+    "__v": 0
+  },
+  {
+    "_id": "5975ebf4ffabae0673e36c4f",
+    "project": "partner",
+    "key": "remoteManage.deviceStatus",
+    "lang": "zh",
+    "value": "设备状态",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c50",
+    "project": "partner",
+    "key": "index.hello",
+    "lang": "en",
+    "value": "Hello，{name}",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c51",
+    "project": "partner",
+    "key": "index.title",
+    "lang": "en",
+    "value": "SUNMI_PARTNERS",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c52",
+    "project": "partner",
+    "key": "common.yes",
+    "lang": "en",
+    "value": "Yes",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c53",
+    "project": "partner",
+    "key": "common.ok",
+    "lang": "en",
+    "value": "OK",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c54",
+    "project": "partner",
+    "key": "error.201",
+    "lang": "en",
+    "value": "Username or password error",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c55",
+    "project": "partner",
+    "key": "menus.index",
+    "lang": "en",
+    "value": "Partner",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c56",
+    "project": "partner",
+    "key": "menus.desktop",
+    "lang": "en",
+    "value": "My Launcher",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c57",
+    "project": "partner",
+    "key": "menus.machPosit",
+    "lang": "en",
+    "value": "Machine Position",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c58",
+    "project": "partner",
+    "key": "menus.mach",
+    "lang": "en",
+    "value": "My Machine",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c59",
+    "project": "partner",
+    "key": "menus.rom",
+    "lang": "en",
+    "value": "Upgrade Settings",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c5a",
+    "project": "partner",
+    "key": "login.Login",
+    "lang": "en",
+    "value": "Login",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c5b",
+    "project": "partner",
+    "key": "login.fp",
+    "lang": "en",
+    "value": "Find your password",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c5c",
+    "project": "partner",
+    "key": "login.instruction",
+    "lang": "en",
+    "value": "If your password's length less than 8 or composed of numbers or letters only , Please update .",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c5d",
+    "project": "partner",
+    "key": "outOfDate.placeholder",
+    "lang": "en",
+    "value": "Please input a password",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c5e",
+    "project": "partner",
+    "key": "logout.warning",
+    "lang": "en",
+    "value": "WARNING!",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c5f",
+    "project": "partner",
+    "key": "remoteManage.columnRom",
+    "lang": "en",
+    "value": "ROM Model",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c60",
+    "project": "partner",
+    "key": "remoteManage.remoteAlert",
+    "lang": "en",
+    "value": "In the following list, the number of online devices depends on whether the device is upgraded to the latest system and whether the device uses a WiFi network!",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c61",
+    "project": "partner",
+    "key": "remoteManage.remoteOnlineTip",
+    "lang": "en",
+    "value": "You can view basic information about the device, such as model, location, version information, installed list of applications, switch settings, etc.",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c62",
+    "project": "partner",
+    "key": "remoteManage.infoApps",
+    "lang": "en",
+    "value": "Applications",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c63",
+    "project": "partner",
+    "key": "remoteManage.storage",
+    "lang": "en",
+    "value": "Storage",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c64",
+    "project": "partner",
+    "key": "remoteManage.theMachSn",
+    "lang": "en",
+    "value": "SN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c65",
+    "project": "partner",
+    "key": "remoteManage.plugins",
+    "lang": "en",
+    "value": "Peripheral information",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c66",
+    "project": "partner",
+    "key": "remoteManage.network3G",
+    "lang": "en",
+    "value": "3G",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c67",
+    "project": "partner",
+    "key": "remoteManage.networkIp",
+    "lang": "en",
+    "value": "Ip Address",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c68",
+    "project": "partner",
+    "key": "remoteManage.appName",
+    "lang": "en",
+    "value": "Application name",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c69",
+    "project": "partner",
+    "key": "remoteManage.appIsDisabled",
+    "lang": "en",
+    "value": "Disabled",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c6a",
+    "project": "partner",
+    "key": "remoteManage.bluetooth",
+    "lang": "en",
+    "value": "Bluetooth",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c6b",
+    "project": "partner",
+    "key": "remoteManage.devOption",
+    "lang": "en",
+    "value": "Developer",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c6c",
+    "project": "partner",
+    "key": "remoteManage.pointerLocation",
+    "lang": "en",
+    "value": "Pointer location",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c6d",
+    "project": "partner",
+    "key": "remoteManage.customSetting",
+    "lang": "en",
+    "value": "Personalization",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c6e",
+    "project": "partner",
+    "key": "remoteManage.location",
+    "lang": "en",
+    "value": "Location",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c6f",
+    "project": "partner",
+    "key": "remoteManage.showPassword",
+    "lang": "en",
+    "value": "Make passwords visible",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c70",
+    "project": "partner",
+    "key": "remoteManage.enableGooglePlay",
+    "lang": "en",
+    "value": "Google Play",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c71",
+    "project": "partner",
+    "key": "remoteManage.deviceStatus",
+    "lang": "en",
+    "value": "Device Status",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c72",
+    "project": "partner",
+    "key": "index.illegal",
+    "lang": "en",
+    "value": "illegal access",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c73",
+    "project": "partner",
+    "key": "index.myAccount",
+    "lang": "en",
+    "value": "My Account",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c74",
+    "project": "partner",
+    "key": "common.action",
+    "lang": "en",
+    "value": "Action",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c75",
+    "project": "partner",
+    "key": "common.size",
+    "lang": "en",
+    "value": "Size",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c76",
+    "project": "partner",
+    "key": "error.-2",
+    "lang": "en",
+    "value": "Access expired! Please log in again",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c77",
+    "project": "partner",
+    "key": "error.244",
+    "lang": "en",
+    "value": "Connection timed out, please retry",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c78",
+    "project": "partner",
+    "key": "menus.market",
+    "lang": "en",
+    "value": "My App Store",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c79",
+    "project": "partner",
+    "key": "menus.nfs",
+    "lang": "en",
+    "value": "My Data Manager",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c7a",
+    "project": "partner",
+    "key": "menus.machEmploy",
+    "lang": "en",
+    "value": "Machine Information",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c7b",
+    "project": "partner",
+    "key": "menus.cardReader",
+    "lang": "en",
+    "value": "CardReader Settings",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c7c",
+    "project": "partner",
+    "key": "menus.remoteManage",
+    "lang": "en",
+    "value": "Remote Management",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c7d",
+    "project": "partner",
+    "key": "login.wrong",
+    "lang": "en",
+    "value": "Username or password error!",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c7e",
+    "project": "partner",
+    "key": "login.shibai",
+    "lang": "en",
+    "value": "Login Failed! ",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c7f",
+    "project": "partner",
+    "key": "outOfDate.tips1",
+    "lang": "en",
+    "value": "Because you have not been in operation for a long time,",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c80",
+    "project": "partner",
+    "key": "logout.tip1",
+    "lang": "en",
+    "value": "Because your account is logged on at the other end,",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c81",
+    "project": "partner",
+    "key": "remoteManage.columnStatus",
+    "lang": "en",
+    "value": "Status",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c82",
+    "project": "partner",
+    "key": "remoteManage.columnOperating",
+    "lang": "en",
+    "value": "Operating",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c83",
+    "project": "partner",
+    "key": "remoteManage.remoteTotalTip",
+    "lang": "en",
+    "value": "Bind the device under your company account.",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c84",
+    "project": "partner",
+    "key": "remoteManage.deviceInfo",
+    "lang": "en",
+    "value": "Device Information",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c85",
+    "project": "partner",
+    "key": "remoteManage.ram",
+    "lang": "en",
+    "value": "RAM",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c86",
+    "project": "partner",
+    "key": "remoteManage.theMach",
+    "lang": "en",
+    "value": "The machine",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c87",
+    "project": "partner",
+    "key": "remoteManage.theMachRomVer",
+    "lang": "en",
+    "value": "ROM Version",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c88",
+    "project": "partner",
+    "key": "remoteManage.networkSim",
+    "lang": "en",
+    "value": "Sim SN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c89",
+    "project": "partner",
+    "key": "remoteManage.network3GStrength",
+    "lang": "en",
+    "value": "3G network strength",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c8a",
+    "project": "partner",
+    "key": "remoteManage.printerModel",
+    "lang": "en",
+    "value": "Printer Model",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c8b",
+    "project": "partner",
+    "key": "remoteManage.appDefaultStartup",
+    "lang": "en",
+    "value": "Default Startup",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c8c",
+    "project": "partner",
+    "key": "remoteManage.wireless&networks",
+    "lang": "en",
+    "value": "Wireless&networks",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c8d",
+    "project": "partner",
+    "key": "remoteManage.cellularRoaming",
+    "lang": "en",
+    "value": "Data roaming",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c8e",
+    "project": "partner",
+    "key": "remoteManage.stayAwake",
+    "lang": "en",
+    "value": "Stay awake",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c8f",
+    "project": "partner",
+    "key": "remoteManage.showCpuInfo",
+    "lang": "en",
+    "value": "Show CPU usage",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c90",
+    "project": "partner",
+    "key": "remoteManage.iBeacon",
+    "lang": "en",
+    "value": "iBeacon",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c91",
+    "project": "partner",
+    "key": "remoteManage.lockSim",
+    "lang": "en",
+    "value": "Lock SIM card",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c92",
+    "project": "partner",
+    "key": "remoteManage.general",
+    "lang": "en",
+    "value": "General",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c93",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleMap",
+    "lang": "en",
+    "value": "Google Maps",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c94",
+    "project": "partner",
+    "key": "index.welcome",
+    "lang": "en",
+    "value": "Welcome to SUNMI PARTNER platform!",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c95",
+    "project": "partner",
+    "key": "index.logout",
+    "lang": "en",
+    "value": "Log Out",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c96",
+    "project": "partner",
+    "key": "common.all",
+    "lang": "en",
+    "value": "All",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c97",
+    "project": "partner",
+    "key": "common.noData",
+    "lang": "en",
+    "value": "No related content",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c98",
+    "project": "partner",
+    "key": "error.-1",
+    "lang": "en",
+    "value": "Request fail, wrong parameters",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c99",
+    "project": "partner",
+    "key": "error.246",
+    "lang": "en",
+    "value": "Users are disabled, please contact the administrator",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c9a",
+    "project": "partner",
+    "key": "menus.boot",
+    "lang": "en",
+    "value": "My Boot Animation",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c9b",
+    "project": "partner",
+    "key": "menus.actMach",
+    "lang": "en",
+    "value": "Active Machine",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c9c",
+    "project": "partner",
+    "key": "menus.client",
+    "lang": "en",
+    "value": "My Customers",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c9d",
+    "project": "partner",
+    "key": "menus.news",
+    "lang": "en",
+    "value": "My Message",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c9e",
+    "project": "partner",
+    "key": "login.partners",
+    "lang": "en",
+    "value": "PARTNERS",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36c9f",
+    "project": "partner",
+    "key": "login.register",
+    "lang": "en",
+    "value": "Register",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca0",
+    "project": "partner",
+    "key": "login.safety",
+    "lang": "en",
+    "value": "Safety instruction",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca1",
+    "project": "partner",
+    "key": "outOfDate.tips2",
+    "lang": "en",
+    "value": "to ensure the security of information,Please login again.",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca2",
+    "project": "partner",
+    "key": "logout.tip2",
+    "lang": "en",
+    "value": "this login has expired,please log in again",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca3",
+    "project": "partner",
+    "key": "remoteManage.columnModel",
+    "lang": "en",
+    "value": "Model",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca4",
+    "project": "partner",
+    "key": "remoteManage.remoteDetail",
+    "lang": "en",
+    "value": "Device Information",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca5",
+    "project": "partner",
+    "key": "remoteManage.remoteOnline",
+    "lang": "en",
+    "value": "Online devices",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca6",
+    "project": "partner",
+    "key": "remoteManage.infoBasic",
+    "lang": "en",
+    "value": "Device",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca7",
+    "project": "partner",
+    "key": "remoteManage.battery",
+    "lang": "en",
+    "value": "Battery",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca8",
+    "project": "partner",
+    "key": "remoteManage.theMachModel",
+    "lang": "en",
+    "value": "Model",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ca9",
+    "project": "partner",
+    "key": "remoteManage.theMachLoc",
+    "lang": "en",
+    "value": "Location",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36caa",
+    "project": "partner",
+    "key": "remoteManage.networkOperator",
+    "lang": "en",
+    "value": "Operator",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cab",
+    "project": "partner",
+    "key": "remoteManage.networkMac",
+    "lang": "en",
+    "value": "MAC Address",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cac",
+    "project": "partner",
+    "key": "remoteManage.printerVer",
+    "lang": "en",
+    "value": "Printer board version",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cad",
+    "project": "partner",
+    "key": "remoteManage.appDefaultDesktop",
+    "lang": "en",
+    "value": "Default Desktop",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cae",
+    "project": "partner",
+    "key": "remoteManage.wifi",
+    "lang": "en",
+    "value": "WI-FI",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36caf",
+    "project": "partner",
+    "key": "remoteManage.vpn",
+    "lang": "en",
+    "value": "VPN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb0",
+    "project": "partner",
+    "key": "remoteManage.showTouch",
+    "lang": "en",
+    "value": "Show touches",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb1",
+    "project": "partner",
+    "key": "remoteManage.showANR",
+    "lang": "en",
+    "value": "Show all ANRs",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb2",
+    "project": "partner",
+    "key": "remoteManage.timezone",
+    "lang": "en",
+    "value": "Automatic time zone",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb3",
+    "project": "partner",
+    "key": "remoteManage.password",
+    "lang": "en",
+    "value": "Password",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb4",
+    "project": "partner",
+    "key": "remoteManage.googleApps",
+    "lang": "en",
+    "value": "Google Apps",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb5",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleSetting",
+    "lang": "en",
+    "value": "Google Settings",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb6",
+    "project": "partner",
+    "key": "index.404",
+    "lang": "en",
+    "value": "Not Found",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb7",
+    "project": "partner",
+    "key": "common.no",
+    "lang": "en",
+    "value": "No",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb8",
+    "project": "partner",
+    "key": "common.warning",
+    "lang": "en",
+    "value": "Warning",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cb9",
+    "project": "partner",
+    "key": "error.235",
+    "lang": "en",
+    "value": "Users are disabled, please contact the administrator",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cba",
+    "project": "partner",
+    "key": "menus.app",
+    "lang": "en",
+    "value": "My App",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cbb",
+    "project": "partner",
+    "key": "menus.ibeacon",
+    "lang": "en",
+    "value": "My Ibeacon",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cbc",
+    "project": "partner",
+    "key": "menus.machLife",
+    "lang": "en",
+    "value": "Machine Lifecycle",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cbd",
+    "project": "partner",
+    "key": "menus.order",
+    "lang": "en",
+    "value": "My Order",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cbe",
+    "project": "partner",
+    "key": "menus.general",
+    "lang": "en",
+    "value": "Common",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cbf",
+    "project": "partner",
+    "key": "login.userNameplaceholder",
+    "lang": "en",
+    "value": "User Name",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc0",
+    "project": "partner",
+    "key": "login.documentation",
+    "lang": "en",
+    "value": "Developer Documentation",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc1",
+    "project": "partner",
+    "key": "login.know",
+    "lang": "en",
+    "value": "I know",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc2",
+    "project": "partner",
+    "key": "outOfDate.submit",
+    "lang": "en",
+    "value": "Login",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc3",
+    "project": "partner",
+    "key": "remoteManage.inputSnQuery",
+    "lang": "en",
+    "value": "Input SN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc4",
+    "project": "partner",
+    "key": "remoteManage.columnSn",
+    "lang": "en",
+    "value": "SN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc5",
+    "project": "partner",
+    "key": "remoteManage.remoteSummary",
+    "lang": "en",
+    "value": "Total {total} / Online {online}",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc6",
+    "project": "partner",
+    "key": "remoteManage.remoteTip",
+    "lang": "en",
+    "value": "Since traffic costs are generated in the case of non-WiFi networks, only device data using WiFi networks is available here.",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc7",
+    "project": "partner",
+    "key": "remoteManage.infoSetting",
+    "lang": "en",
+    "value": "Settings",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc8",
+    "project": "partner",
+    "key": "remoteManage.deviceMemory",
+    "lang": "en",
+    "value": "Memory",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cc9",
+    "project": "partner",
+    "key": "remoteManage.theMachIMEI",
+    "lang": "en",
+    "value": "IMEI",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cca",
+    "project": "partner",
+    "key": "remoteManage.pluginsScreen",
+    "lang": "en",
+    "value": "Screen Resolution",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ccb",
+    "project": "partner",
+    "key": "remoteManage.networkWLAN",
+    "lang": "en",
+    "value": "WLAN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ccc",
+    "project": "partner",
+    "key": "remoteManage.printer",
+    "lang": "en",
+    "value": "Printer board",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ccd",
+    "project": "partner",
+    "key": "remoteManage.appVer",
+    "lang": "en",
+    "value": "Version",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cce",
+    "project": "partner",
+    "key": "remoteManage.appThird",
+    "lang": "en",
+    "value": "Third-party usage",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ccf",
+    "project": "partner",
+    "key": "remoteManage.cellular",
+    "lang": "en",
+    "value": "Cellular",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd0",
+    "project": "partner",
+    "key": "remoteManage.usbDebug",
+    "lang": "en",
+    "value": "USB debugging",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd1",
+    "project": "partner",
+    "key": "remoteManage.forceGpuRendering",
+    "lang": "en",
+    "value": "Force GPU rendering",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd2",
+    "project": "partner",
+    "key": "remoteManage.volumeCustom",
+    "lang": "en",
+    "value": "Volume keys custom",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd3",
+    "project": "partner",
+    "key": "remoteManage.security",
+    "lang": "en",
+    "value": "Security",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd4",
+    "project": "partner",
+    "key": "remoteManage.deviceAdmin",
+    "lang": "en",
+    "value": "Device administration",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd5",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleVoice",
+    "lang": "en",
+    "value": "Google Voice",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd6",
+    "project": "partner",
+    "key": "remoteManage.isNotMatch",
+    "lang": "en",
+    "value": "Inconsistency",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd7",
+    "project": "partner",
+    "key": "index.developer",
+    "lang": "en",
+    "value": "Developer",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd8",
+    "project": "partner",
+    "key": "common.search",
+    "lang": "en",
+    "value": "Search",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cd9",
+    "project": "partner",
+    "key": "common.version",
+    "lang": "en",
+    "value": "Version",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cda",
+    "project": "partner",
+    "key": "error.default",
+    "lang": "en",
+    "value": "Request error",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cdb",
+    "project": "partner",
+    "key": "error.243",
+    "lang": "en",
+    "value": "Device is offline",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cdc",
+    "project": "partner",
+    "key": "menus.debug",
+    "lang": "en",
+    "value": "Debugger",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cdd",
+    "project": "partner",
+    "key": "menus.machData",
+    "lang": "en",
+    "value": "Machine Data",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cde",
+    "project": "partner",
+    "key": "menus.machApp",
+    "lang": "en",
+    "value": "Machine Application",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cdf",
+    "project": "partner",
+    "key": "menus.phone",
+    "lang": "en",
+    "value": "Telephone & SMS",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce0",
+    "project": "partner",
+    "key": "menus.remote",
+    "lang": "en",
+    "value": "Remote Assistance",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce1",
+    "project": "partner",
+    "key": "login.passWordplaceholder",
+    "lang": "en",
+    "value": "Password",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce2",
+    "project": "partner",
+    "key": "login.tingyong",
+    "lang": "en",
+    "value": "Users are disabled, please contact the administrator!",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce3",
+    "project": "partner",
+    "key": "login.change",
+    "lang": "en",
+    "value": "Change Password",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce4",
+    "project": "partner",
+    "key": "outOfDate.username",
+    "lang": "en",
+    "value": "UserName:",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce5",
+    "project": "partner",
+    "key": "remoteManage.selectModel",
+    "lang": "en",
+    "value": "Select the model",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce6",
+    "project": "partner",
+    "key": "remoteManage.columnConnect",
+    "lang": "en",
+    "value": "Last connected",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce7",
+    "project": "partner",
+    "key": "remoteManage.remoteTotal",
+    "lang": "en",
+    "value": "Total devices",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce8",
+    "project": "partner",
+    "key": "remoteManage.currentDevice",
+    "lang": "en",
+    "value": "Current Device",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ce9",
+    "project": "partner",
+    "key": "remoteManage.cpu",
+    "lang": "en",
+    "value": "CPU",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cea",
+    "project": "partner",
+    "key": "remoteManage.deviceMemoryTip",
+    "lang": "en",
+    "value": "{used} Used, Total {total}",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ceb",
+    "project": "partner",
+    "key": "remoteManage.theMachSysVer",
+    "lang": "en",
+    "value": "Version",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cec",
+    "project": "partner",
+    "key": "remoteManage.network",
+    "lang": "en",
+    "value": "Network status information",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36ced",
+    "project": "partner",
+    "key": "remoteManage.networkUsing",
+    "lang": "en",
+    "value": "Use",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cee",
+    "project": "partner",
+    "key": "remoteManage.printerSn",
+    "lang": "en",
+    "value": "Printer SN",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cef",
+    "project": "partner",
+    "key": "remoteManage.appSize",
+    "lang": "en",
+    "value": "Size",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf0",
+    "project": "partner",
+    "key": "remoteManage.appSystem",
+    "lang": "en",
+    "value": "System applications",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf1",
+    "project": "partner",
+    "key": "remoteManage.cellularData",
+    "lang": "en",
+    "value": "Cellular data",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf2",
+    "project": "partner",
+    "key": "remoteManage.mockLocation",
+    "lang": "en",
+    "value": "Allow mock locations",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf3",
+    "project": "partner",
+    "key": "remoteManage.strictModeEnable",
+    "lang": "en",
+    "value": "Strict mode enabled",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf4",
+    "project": "partner",
+    "key": "remoteManage.userCenter",
+    "lang": "en",
+    "value": "UserCenter",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf5",
+    "project": "partner",
+    "key": "remoteManage.simLock",
+    "lang": "en",
+    "value": "SIM card lock settings",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf6",
+    "project": "partner",
+    "key": "remoteManage.unknownSource",
+    "lang": "en",
+    "value": "Unknown sources",
+    "__v": 0
+  },
+  {
+    "_id": "5975ec3affabae0673e36cf7",
+    "project": "partner",
+    "key": "remoteManage.enableGoogleMail",
+    "lang": "en",
+    "value": "Gmail",
+    "__v": 0
+  }
+]

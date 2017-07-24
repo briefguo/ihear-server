@@ -9,7 +9,17 @@ export default (router: Router) => {
   router
     //同步数据库
     .get('/i18n-sync', async function(ctx: IRouterContext) {
-      
+      const _apiPath = path.resolve(__dirname, '../../data/i18n.json')
+      const apiObject = JSON.parse(fs.readFileSync(_apiPath, 'utf-8'))
+
+      try {
+        Object.keys(apiObject).map(item => {
+          I18n.create({ ...apiObject[item] })
+        })
+        ctx.body = { code: 1, data: 'ok' }
+      } catch (e) {
+        ctx.body = { code: -1, data: 'fail', err: e }
+      }
     })
 
     /**
@@ -24,7 +34,6 @@ export default (router: Router) => {
     .get('/i18n/:params', async function(ctx: IRouterContext) {
       try {
         const params = JSON.parse(ctx.params.params)
-        console.log(params)
         const data = (await I18n.find({ ...params }))
         ctx.body = { code: 1, data, msg: params.project }
       } catch (e) {
