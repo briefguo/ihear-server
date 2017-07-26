@@ -108,4 +108,31 @@ export default (router: Router) => {
         ctx.body = { code: -1, data: e }
       }
     })
+
+    /**
+     * 导出格式化的语言包数据
+     * 
+     * 返回格式：
+     * {
+     *   zh: { key:value, ...},
+     *   en: { key:value, ...}
+     * }
+     */
+    .get('/i18n/export/:projectId', async function(ctx: IRouterContext) {
+      try {
+        const project = ctx.params.projectId
+        const datas = (await I18n.find({ project }))
+        
+        //格式化数据
+        let langs: any = { zh: {}, en: {} }
+        datas.map((item: any) => {
+          const { key, value, lang } = item
+          langs[lang][key] = value
+        })
+
+        ctx.body = { code: 1, data: langs, msg: project }
+      } catch (e) {
+        ctx.body = { code: -1, data: e }
+      }
+    })
 }
