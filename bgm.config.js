@@ -37,6 +37,6 @@ module.exports = {
       type: 'blob',
       originPath: `${item}`,
       targetPath: `data/${item}`,
-    })),
+    }))
   },
 }
