@@ -1,0 +1,531 @@
+[
+    {
+        "name": "GetChinaMapList",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "5993e9834f6f907f9d9a0dc0",
+        "__v": 0,
+        "requestParams": [],
+        "requestParamsType": [],
+        "required": [],
+        "pathArray": [
+            "tobService",
+            "map"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "test",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "5993d9a94f6f907f9d9a0dbe",
+        "__v": 0,
+        "requestParams": [
+            "adminId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId"
+        ],
+        "pathArray": [
+            "webapi",
+            "dev"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Manage.login",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "5993ec5b4f6f907f9d9a0dc1",
+        "__v": 0,
+        "requestParams": [
+            "userName",
+            "passWord"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "userName",
+            "passWord"
+        ],
+        "pathArray": [
+            "webapi",
+            "mng"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Freight.getFreightList",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "599b8bc94f6f907f9d9a0e7d",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "pageCount",
+            "pageIndex"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "pageIndex",
+            "pageCount"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Freight.deleteFreight",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8bf34f6f907f9d9a0e7e",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "fId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "fId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Freight.getFreightDetailList",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8c134f6f907f9d9a0e7f",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "fId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "fId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Freight.addFreight",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8c8a4f6f907f9d9a0e80",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "area",
+            "defaultContinueHeavy",
+            "defaultContinueHeavyFreight",
+            "defaultFirstHeavy",
+            "defaultFirstHeavyFreight",
+            "modelName"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "area",
+            "defaultContinueHeavy",
+            "defaultContinueHeavyFreight",
+            "defaultFirstHeavy",
+            "defaultFirstHeavyFreight",
+            "modelName"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Freight.editFreight",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8cd64f6f907f9d9a0e81",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "area",
+            "defaultContinueHeavy",
+            "defaultContinueHeavyFreight",
+            "defaultFirstHeavy",
+            "defaultFirstHeavyFreight",
+            "modelName"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "area",
+            "defaultContinueHeavy",
+            "defaultContinueHeavyFreight",
+            "defaultFirstHeavy",
+            "defaultFirstHeavyFreight",
+            "modelName"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Order.getOrderList",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "599b8d6e4f6f907f9d9a0e82",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "endTime",
+            "pageCount",
+            "pageIndex",
+            "searchKey",
+            "startTime",
+            "status"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "status",
+            "startTime",
+            "endTime",
+            "pageCount",
+            "pageIndex",
+            "searchKey"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Order.exportExcel",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "599b8dbe4f6f907f9d9a0e83",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "endTime",
+            "searchKey",
+            "startTime",
+            "status"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "status",
+            "startTime",
+            "endTime",
+            "searchKey"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Order.importExcel",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "599b8df24f6f907f9d9a0e84",
+        "__v": 0,
+        "requestParams": [
+            "adminId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Order.confirmReceipt",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8e394f6f907f9d9a0e85",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "oId",
+            "status"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "oId",
+            "status"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Order.getLogisticsInfo",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8e574f6f907f9d9a0e86",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "oId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "oId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Order.updateExpressNo",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "599b8e8c4f6f907f9d9a0e87",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "oId",
+            "expressNo"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "oId",
+            "expressNo"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Goods.getGoodsList",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "599b8eb84f6f907f9d9a0e88",
+        "__v": 0,
+        "requestParams": [
+            "adminId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Goods.deleteGoods",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8ee44f6f907f9d9a0e89",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "gId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "gId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Goods.upDownGoods",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b8efd4f6f907f9d9a0e8a",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "gId",
+            "type"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "gId",
+            "type"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "File.uploadPic",
+        "responseType": "object",
+        "response": {
+            "dataType": "object"
+        },
+        "_id": "599b8f2d4f6f907f9d9a0e8b",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "filename",
+            "limit"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "filename"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Goods.getListForGoods",
+        "responseType": "array",
+        "response": {
+            "dataType": "array"
+        },
+        "_id": "599b8f624f6f907f9d9a0e8c",
+        "__v": 0,
+        "requestParams": [
+            "adminId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Goods.getGoodsInfo",
+        "responseType": "array",
+        "response": {
+            "dataType": "array"
+        },
+        "_id": "599b8f864f6f907f9d9a0e8e",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "gId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "gId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    },
+    {
+        "name": "Goods.addOrEditGoods",
+        "responseType": "null",
+        "response": {
+            "dataType": "null"
+        },
+        "_id": "599b90114f6f907f9d9a0e8f",
+        "__v": 0,
+        "requestParams": [
+            "adminId",
+            "details",
+            "detailsImgs",
+            "imgs",
+            "name",
+            "originPrice",
+            "parameter",
+            "price",
+            "templateId",
+            "gId"
+        ],
+        "requestParamsType": [],
+        "required": [
+            "adminId",
+            "details",
+            "detailsImgs",
+            "imgs",
+            "name",
+            "originPrice",
+            "parameter",
+            "price",
+            "templateId"
+        ],
+        "pathArray": [
+            "webapi",
+            "small"
+        ],
+        "project": "store"
+    }
+]

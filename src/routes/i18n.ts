@@ -1,22 +1,33 @@
 'use strict'
 
-import fs from 'fs'
+// import fs from 'fs'
+import _ from 'lodash'
 import path from 'path'
 import Router, { IRouterContext } from 'koa-router'
 import I18n from '../domain/I18n/I18nModel'
 
+const dataPath = '../../data'
+const getDataPathByFileName = (name: string) => path.resolve(__dirname, `${dataPath}/${name}`)
+
 export default (router: Router) => {
   router
     // 同步数据库
-    .get('/i18n-sync', async function(ctx: IRouterContext) {
-      const _apiPath = path.resolve(__dirname, '../../data/i18n.json')
-      const apiObject = JSON.parse(fs.readFileSync(_apiPath, 'utf-8'))
-
+    .get('/i18n-sync', async function (ctx: IRouterContext) {
+      const data = require(getDataPathByFileName('i18n.json'))
+      const i18nPairs = _.map(data, (value: any, lang: string) => Object.keys(value)
+        .map((key: string) => ({
+          key, lang,
+          value: value[key],
+          project: 'partner',
+        })))
+      // _.unionWith(i18nPairs, _.isEqual);
+      const i18nMaps = _.flatMap(i18nPairs)
+      // i18nMaps = _.union(i18nMaps, langMap)
       try {
-        Object.keys(apiObject).map(item => {
-          I18n.create({ ...apiObject[item] })
-        })
-        ctx.body = { code: 1, data: 'ok' }
+        // i18nMaps.map((item: any) => {
+        //   I18n.create({ ...item })
+        // })
+        ctx.body = { i18nMaps, code: 1, data: 'ok' }
       } catch (e) {
         ctx.body = { code: -1, data: 'fail', err: e }
       }
@@ -31,7 +42,7 @@ export default (router: Router) => {
      *     lang: 'zh' | 'en',   可选，语言类型，不传返回所有类型
      *   }
      */
-    .get('/i18n/:params', async function(ctx: IRouterContext) {
+    .get('/i18n/:params', async function (ctx: IRouterContext) {
       try {
         const params = JSON.parse(ctx.params.params)
         const data = (await I18n.find({ ...params }))
@@ -42,7 +53,7 @@ export default (router: Router) => {
     })
 
     // 删除语言包项
-    .delete('/i18n/:projectId/:key', async function(ctx: IRouterContext) {
+    .delete('/i18n/:projectId/:key', async function (ctx: IRouterContext) {
       try {
         const project = ctx.params.projectId
         const key = ctx.params.key
@@ -55,7 +66,7 @@ export default (router: Router) => {
     /**
      * 导入数据
      */
-    .put('/i18n/import/:data', async function(ctx: IRouterContext) {
+    .put('/i18n/import/:data', async function (ctx: IRouterContext) {
       try {
         const params = JSON.parse(ctx.params.data)
         const project = params.projectId
@@ -87,7 +98,7 @@ export default (router: Router) => {
      *     en: 'english translation'
      *   }
      */
-    .put('/i18n/:projectId/:key/:data', async function(ctx: IRouterContext) {
+    .put('/i18n/:projectId/:key/:data', async function (ctx: IRouterContext) {
       try {
         const key = ctx.params.key
         const project = ctx.params.projectId
@@ -118,11 +129,11 @@ export default (router: Router) => {
      *   en: { key:value, ...}
      * }
      */
-    .get('/i18n/export/:projectId', async function(ctx: IRouterContext) {
+    .get('/i18n/export/:projectId', async function (ctx: IRouterContext) {
       try {
         const project = ctx.params.projectId
         const datas = (await I18n.find({ project }))
-        
+
         //格式化数据
         let langs: any = { zh: {}, en: {} }
         datas.map((item: any) => {

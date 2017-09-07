@@ -7,7 +7,7 @@ import Router, { IRouterContext } from 'koa-router'
 
 export default (router: Router) => {
   router
-    .get('/config-sync', async function(ctx: IRouterContext) {
+    .get('/config-sync', async function (ctx: IRouterContext) {
       const _configPath = path.resolve(__dirname, '../../data/config.json')
       let configString = fs.readFileSync(_configPath, 'utf-8')
 
@@ -19,11 +19,11 @@ export default (router: Router) => {
       }
     })
     // 获取API列表
-    .get('/config', async function(ctx: IRouterContext) {
+    .get('/config', async function (ctx: IRouterContext) {
       const results = await Config.find()
       ctx.body = results[0]
     })
-    .put('/config/:newConfig', async function(ctx: IRouterContext) {
+    .put('/config/:newConfig', async function (ctx: IRouterContext) {
       try {
         const newConfig = ctx.params.newConfig
         ctx.body = await Config.update({ '__v': 0 }, { modulePaths: JSON.parse(newConfig).modulePaths })
