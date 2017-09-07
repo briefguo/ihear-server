@@ -14,19 +14,19 @@ export default (router: Router) => {
     // 同步数据库
     .get('/i18n-sync', async function (ctx: IRouterContext) {
       const data = require(getDataPathByFileName('i18n.json'))
-      const i18nPairs = _.map(data, (value: any, lang: string) => Object.keys(value)
+
+      const i18nPairs = _.map(data, (langMap: any, lang: string) => Object.keys(langMap)
         .map((key: string) => ({
           key, lang,
-          value: value[key],
+          value: langMap[key],
           project: 'partner',
-        })))
-      // _.unionWith(i18nPairs, _.isEqual);
+        }))
+      )
       const i18nMaps = _.flatMap(i18nPairs)
-      // i18nMaps = _.union(i18nMaps, langMap)
       try {
-        // i18nMaps.map((item: any) => {
-        //   I18n.create({ ...item })
-        // })
+        i18nMaps.map((item: any) => {
+          I18n.create({ ...item })
+        })
         ctx.body = { i18nMaps, code: 1, data: 'ok' }
       } catch (e) {
         ctx.body = { code: -1, data: 'fail', err: e }
@@ -134,7 +134,7 @@ export default (router: Router) => {
         const project = ctx.params.projectId
         const datas = (await I18n.find({ project }))
 
-        //格式化数据
+        // 格式化数据
         let langs: any = { zh: {}, en: {} }
         datas.map((item: any) => {
           const { key, value, lang } = item
