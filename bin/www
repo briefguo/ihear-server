@@ -26,24 +26,7 @@ var port = normalizePort(process.env.PORT || '3000')
 /**
  * Create HTTPS server.
  */
-var server
-
-if (process.env.MODE == 'https') {
-
-  var ssl_key = path.resolve(__dirname, '../cert/214056224770075.key')
-  var ssl_cert = path.resolve(__dirname, '../cert/214056224770075.pem')
-  server = https.createServer({
-    // providing server with  SSL key/cert
-    key: fs.readFileSync(ssl_key),
-    cert: fs.readFileSync(ssl_cert)
-  }, app.callback())
-
-} else {
-
-  server = http.createServer(app.callback())
-
-}
-
+var server = http.createServer(app.callback())
 var mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://127.0.0.1/mgt',{
