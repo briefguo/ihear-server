@@ -54,10 +54,11 @@ export default (router: Router) => {
     })
 
     // 根据ID获取单条API
-    .get('/api/:id', async function (ctx: IRouterContext) {
+    .get('/api/:project/:id', async function (ctx: IRouterContext) {
       try {
         const _id = ctx.params.id
-        ctx.body = await Api.find({ _id })
+	const project = ctx.params.project
+        ctx.body = await Api.find({ _id,project })
       } catch (e) {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }

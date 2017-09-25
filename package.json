@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "cross-env PORT=3008 supervisor  -e 'node,js,ts' ./bin/www",
-    "prod": "killall node && cross-env PORT=3008 forever start ./bin/www",
+    "prod": "export PORT=3008 && pm2 start ./bin/www",
     "start": "npm run server"
   },
   "repository": {
