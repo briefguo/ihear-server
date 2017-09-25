@@ -54,11 +54,10 @@ export default (router: Router) => {
     })
 
     // 根据ID获取单条API
-    .get('/api/:projectId/:name', async function (ctx: IRouterContext) {
-      const name = ctx.params.name
+    .get('/api/:id', async function (ctx: IRouterContext) {
       try {
-        const data = await Api.find({ name })
-        ctx.body = { code: 1, data }
+        const _id = ctx.params.id
+        ctx.body = await Api.find({ _id })
       } catch (e) {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }
@@ -66,14 +65,6 @@ export default (router: Router) => {
 
     // 删除API
     .delete('/api/:id', async function (ctx: IRouterContext) {
-      try {
-        const _id = ctx.params.id
-        ctx.body = await Api.remove({ _id })
-      } catch (e) {
-        ctx.body = { code: -1, data: 'file_not_found', err: e }
-      }
-    })
-    .get('/delete/:id', async function (ctx: IRouterContext) {
       try {
         const _id = ctx.params.id
         ctx.body = await Api.remove({ _id })
