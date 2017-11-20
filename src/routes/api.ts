@@ -57,8 +57,8 @@ export default (router: Router) => {
     .get('/api/:project/:id', async function (ctx: IRouterContext) {
       try {
         const _id = ctx.params.id
-	const project = ctx.params.project
-        ctx.body = await Api.find({ _id,project })
+        const project = ctx.params.project
+        ctx.body = await Api.find({ _id, project })
       } catch (e) {
         ctx.body = { code: -1, data: 'file_not_found', err: e }
       }

@@ -83,8 +83,7 @@ export default (router: Router) => {
             I18n.create({ project, key, lang, value: langData[key] })
           }
         })
-
-        ctx.body = { code: 1, msg: 'success' }
+        ctx.body = { code: 1 }
       } catch (e) {
         ctx.body = { code: -1, data: e }
       }
@@ -113,7 +112,6 @@ export default (router: Router) => {
             await I18n.create({ project, key, lang, value: newData[lang] })
           }
         })
-
         ctx.body = { code: 1, msg: 'success' }
       } catch (e) {
         ctx.body = { code: -1, data: e }
