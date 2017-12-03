@@ -8,4 +8,31 @@ const I18nSchema = new mongoose.Schema({
   lang: String
 })
 
-export default I18nSchema
+const I18nLangSchema = new mongoose.Schema({
+  code: String,
+  desc: String
+})
+
+const I18nModuleSchema = new mongoose.Schema({
+  name: String,
+  project: String,
+  createTime: Number
+})
+
+const I18nItemSchema = new mongoose.Schema({
+  key: String,
+  value: String,
+  lang: String,
+  module: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'I18nModule' //外键
+  },
+  createTime: Number
+})
+
+export {
+  I18nSchema,
+  I18nLangSchema,
+  I18nModuleSchema,
+  I18nItemSchema
+}
