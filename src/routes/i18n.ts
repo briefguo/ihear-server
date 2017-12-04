@@ -292,6 +292,7 @@ export default (router: Router) => {
      * {
      *   moduleId,  //必须
      *   key,       //必须
+     *   newKey,
      *   en,
      *   zh
      * }
@@ -299,18 +300,28 @@ export default (router: Router) => {
     .post('/i18n/item/update', async function (ctx: IRouterContext) {
       try {
         const { fields } = ctx.request.body
-        const { moduleId, key, ...values } = fields
+        const { moduleId, key, newKey, ...values } = fields
         //参数检测
-        if (!moduleId || !key) {
+        if (!moduleId || !key || !newKey) {
           ctx.body = { code: 101, msg: ERRORS[101] }
           return
         }
 
         //记录是否存在
+        /**
+         * 由于允许修改key值，所以存在以下规则：
+         * 1、key和newKey相同时，key需存在才允许修改
+         * 2、key和newKey不同时，newKey不存在才允许修改
+         */
         const module = mongoose.Types.ObjectId(moduleId)
         const isExist = await I18nItemModel.find({ module, key }).count()
         if (!isExist) {
           ctx.body = { code: 108, msg: ERRORS[108] }
+          return
+        }
+        const isNewExist = await I18nItemModel.find({ module, key: newKey }).count()
+        if (key != newKey && isNewExist) {
+          ctx.body = { code: 107, msg: ERRORS[107] }
           return
         }
 
@@ -328,12 +339,12 @@ export default (router: Router) => {
           if (isExist) {
             await I18nItemModel.update(
               { module, key, lang },
-              { value: values[lang], createTime: (new Date()).getTime() }
+              { key: newKey, value: values[lang], createTime: (new Date()).getTime() }
             )
           } else {
             await I18nItemModel.create({
               module,
-              key,
+              key: newKey,
               lang,
               value: values[lang],
               createTime: (new Date()).getTime()
@@ -363,7 +374,7 @@ export default (router: Router) => {
         const supportLangs = (await I18nLangModel.find()).map((item: any) => item.code)
 
         //参数检测
-        if (!moduleId || !lang || !values || supportLangs.indexOf(lang)===-1) {
+        if (!moduleId || !lang || !values || supportLangs.indexOf(lang) === -1) {
           ctx.body = { code: 101, msg: ERRORS[101] }
           return
         }
@@ -381,7 +392,7 @@ export default (router: Router) => {
               { value: datas[key], createTime: (new Date()).getTime() }
             )
           } else {
-            await I18nItemModel.create({ 
+            await I18nItemModel.create({
               module,
               key,
               lang,
