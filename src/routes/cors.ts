@@ -13,10 +13,12 @@ export default (http: Router) => {
             _.forEach(ctx.request.body.fields, (value, key) => {
                 form.append(key, value)
             })
-            ctx.body = await fetch(ctx.query.url, { method: 'POST', body: form })
-                .then(res => res.text())
+		const json = await fetch(ctx.query.url, { method: 'POST', body: form })
+.then(res=>res.text())
+console.log('ok',json)
+		ctx.body=json
         } catch (error) {
-            // console.log(error);
+            console.log('fail',error);
             ctx.body = error
         }
     })

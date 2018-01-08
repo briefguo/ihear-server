@@ -1,11 +1,10 @@
 .DS_Store
 logs
 .tags
+**/node_modules/**
+**sublime**
 *.log
 npm-debug.log*
-**/node_modules/**
 .idea/
 .idea_modules/
-build/
-cache/
-**sublime**
+common/data/**
