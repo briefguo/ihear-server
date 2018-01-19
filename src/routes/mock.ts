@@ -27,7 +27,7 @@ export default (http: Router) => {
 
             ctx.body = DG(responseParameterList)
         } catch (error) {
-            ctx.body = error
+            ctx.body = { error: `请检查rap定义中，mock语法内是否存在单引号 '' ` }
         }
     })
 }
