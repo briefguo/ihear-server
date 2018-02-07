@@ -15,6 +15,7 @@ export default (router: Router) => {
       try {
         const env = ctx.query.env || ''
         const service = ctx.query.service || ''
+        const mode = ctx.query.mode || 'http'
         const api = await Api.find({ name: service })
         const config = (await Config.find())[0]
         const API = _.keyBy(api, 'name')
@@ -41,13 +42,13 @@ export default (router: Router) => {
         const currentHost = _.keyBy(modulePaths, 'value')[host];
         const currentPath = _.keyBy(currentHost.children, 'value')[path].label;
         const envHost = env ? `${env}.${currentHost.label}` : currentHost.label
-        const fullURL = `//${envHost}${currentPath}${service}`;
+        const fullURL = `${mode}://${envHost}${currentPath}${service}`;
         const form = new FormData()
         _.forEach(ctx.request.body.fields, (value, key) => {
           form.append(key, value)
         })
-        console.log(fullURL, ctx.request.body);
-        return
+        console.log(fullURL, ctx.request.body.fields);
+        // return
         const json = await fetch(fullURL, { method: 'POST', body: form })
           .then(res => res.json())
         console.log('ok', json)
