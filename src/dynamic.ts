@@ -5,8 +5,8 @@ import Router from 'koa-router'
 import importDir from 'import-dir'
 import convert from 'koa-convert'
 import json from 'koa-json'
-import koaBody  from 'koa-body'
-import bodyparser from 'koa-bodyparser'
+import koaBody from 'koa-body'
+// import bodyparser from 'koa-bodyparser'
 
 const routes = importDir('./routes')
 
@@ -19,8 +19,8 @@ export default function api() {
 
   return compose([
     convert(json({})),
-    convert(bodyparser({})),
-    convert(koaBody({ multipart:true })), //lwf:添加formdata
+    // convert(bodyparser({})),
+    convert(koaBody({ multipart: true })), // lwf:添加formdata
     router.routes(),
     router.allowedMethods(),
   ])

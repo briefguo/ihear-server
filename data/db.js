@@ -10,7 +10,7 @@ db.i18n_items.remove({})
 
 //创建表
 db.createCollection('i18n_langs')
-db.createCollection('i18n_moduels')
+db.createCollection('i18n_modules')
 db.createCollection('i18n_items')
 
 //添加数据到表i18n_langs
