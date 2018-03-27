@@ -9,7 +9,6 @@ import Config from './domain/Config/ConfigModel'
 import compose from 'koa-compose'
 import convert from 'koa-convert'
 import json from 'koa-json'
-import koaBody from 'koa-body'
 
 const prefix = ''
 
@@ -68,7 +67,6 @@ export default function api() {
 
   return compose([
     convert(json({})),
-    convert(koaBody({ multipart: true })), // lwf:添加formdata
     router.routes(),
     router.allowedMethods(),
   ])
