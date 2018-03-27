@@ -9,7 +9,7 @@ import Config from './domain/Config/ConfigModel'
 import compose from 'koa-compose'
 import convert from 'koa-convert'
 import json from 'koa-json'
-import bodyparser from 'koa-bodyparser'
+import koaBody from 'koa-body'
 
 const prefix = ''
 
@@ -19,7 +19,7 @@ export default function api() {
   const weixin = (router: Router) => {
     router.post('/', async function (ctx: IRouterContext) {
       try {
-        const { env = 'test', service, project, mode = 'http' } = ctx.request.body
+        const { env = 'test', service, project, mode = 'http' } = ctx.request.body.fields
         const api = await Api.find({ name: service, project })
         const config = (await Config.find())[0]
         const API = _.keyBy(api, 'name')
@@ -48,10 +48,10 @@ export default function api() {
         const envHost = env ? `${env}.${currentHost.label}` : currentHost.label
         const fullURL = `${mode}://${envHost}${currentPath}${service}`;
         const form = new FormData()
-        _.forEach(ctx.request.body, (value, key) => {
+        _.forEach(ctx.request.body.fields, (value, key) => {
           form.append(key, value)
         })
-        console.log(fullURL, ctx.request.body);
+        console.log(fullURL, ctx.request.body.fields);
         // return
         const json = await fetch(fullURL, { method: 'POST', body: form })
           .then(res => res.json())
@@ -68,7 +68,7 @@ export default function api() {
 
   return compose([
     convert(json({})),
-    convert(bodyparser({})),
+    convert(koaBody({ multipart: true })), // lwf:添加formdata
     router.routes(),
     router.allowedMethods(),
   ])
