@@ -1,5 +1,5 @@
 module.exports = {
-  remoteServer: 'http://172.16.0.19:3008',
+  remoteServer: 'http://172.16.0.54:3008',
   // 静态资源配置
   resource: {
     '/svg/partner': [{
