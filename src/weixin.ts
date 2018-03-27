@@ -19,8 +19,8 @@ export default function api() {
   const weixin = (router: Router) => {
     router.post('/', async function (ctx: IRouterContext) {
       try {
-        const { env = 'test', service, mode = 'http' } = ctx.request.body
-        const api = await Api.find({ name: service })
+        const { env = 'test', service, project, mode = 'http' } = ctx.request.body
+        const api = await Api.find({ name: service, project })
         const config = (await Config.find())[0]
         const API = _.keyBy(api, 'name')
 
