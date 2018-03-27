@@ -3,7 +3,7 @@ import compose from 'koa-compose'
 import convert from 'koa-convert'
 import json from 'koa-json'
 import helmet from 'koa-helmet'
-import bodyparser from 'koa-bodyparser'
+// import bodyparser from 'koa-bodyparser'
 import logger from 'koa-logger'
 import cors from 'kcors'
 import setStatic from 'koa-static'
@@ -16,7 +16,7 @@ export default function middleware() {
     helmet(), // reset HTTP headers (e.g. remove x-powered-by)
     convert(json({})),
     convert(cors()),
-    convert(bodyparser({})),
+    // convert(bodyparser({})),
     setStatic(_public),
   ])
 }
