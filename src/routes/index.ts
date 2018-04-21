@@ -1,61 +1,30 @@
 'use strict'
-import _ from 'lodash'
-import FormData from 'form-data'
-import fetch from 'isomorphic-fetch'
-import Router, { IRouterContext } from 'koa-router'
-import Api from '../domain/Api/ApiModel'
-import Config from '../domain/Config/ConfigModel'
 
-// 是否加密
+// import _ from 'lodash'
+// import FormData from 'form-data'
+// import base64 from 'base-64'
+// import md5 from 'md5'
+// import fetch from 'isomorphic-fetch'
+import Router, { IRouterContext } from 'koa-router'
+import aip from '../lib/aip'
+// import Datauri from 'datauri'
+// import fs from 'fs'
+
+var AipSpeechClient = aip.speech
+// 设置APPID/AK/SK
+var APP_ID = 11135948
+var API_KEY = 'cfLVkCqLwZAxnbpYdlKWcgjq'
+var SECRET_KEY = '347768ff55d5d2854f95f73d834c5e0f'
+// 新建一个对象，建议只保存一个对象调用服务接口
+var client = new AipSpeechClient(APP_ID, API_KEY, SECRET_KEY)
+
 export default (router: Router) => {
   router.get('/', async function (ctx: IRouterContext) {
-    ctx.body = 'Hello Koa!'
+    try {
+      const result = await client.text2audio('百度语音合成测试')
+      ctx.body = `data:audio/ogg;base64,${result.data.toString('base64')}`
+    } catch (error) {
+      ctx.body = error
+    }
   })
-    .all('/__api__', async function (ctx: IRouterContext) {
-      try {
-        const env = ctx.query.env || ''
-        const service = ctx.query.service || ''
-        const mode = ctx.query.mode || 'http'
-        const api = await Api.find({ name: service })
-        const config = (await Config.find())[0]
-        const API = _.keyBy(api, 'name')
-
-        if (!API[service]) {
-          throw new Error(
-            `未定义的接口${service},请在[api层]添加接口定义`
-          );
-        }
-
-        const { pathArray } = API[service];
-        if (!pathArray) {
-          throw new Error(
-            `请设置${service}的pathArray属性`
-          );
-        }
-        const [host, path] = pathArray;
-        if (!host || !path) {
-          throw new Error(
-            `请设置${service}的正确的pathArray属性`
-          );
-        }
-        const { modulePaths } = config;
-        const currentHost = _.keyBy(modulePaths, 'value')[host];
-        const currentPath = _.keyBy(currentHost.children, 'value')[path].label;
-        const envHost = env ? `${env}.${currentHost.label}` : currentHost.label
-        const fullURL = `${mode}://${envHost}${currentPath}${service}`;
-        const form = new FormData()
-        _.forEach(ctx.request.body.fields, (value, key) => {
-          form.append(key, value)
-        })
-        console.log(fullURL, ctx.request.body.fields);
-        // return
-        const json = await fetch(fullURL, { method: 'POST', body: form })
-          .then(res => res.json())
-        console.log('ok', json)
-        ctx.body = json
-      } catch (error) {
-        console.log('fail', error);
-        ctx.body = { error }
-      }
-    })
 }
